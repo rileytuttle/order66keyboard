@@ -1,0 +1,5 @@
+./order66-backups/*
+./#auto_saved_files#
+./_autosave*
+./*kicad_sch.lck*
+
