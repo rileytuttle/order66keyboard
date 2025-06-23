@@ -3,7 +3,6 @@
   (lib (name "1042")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/1042")(options "")(descr ""))
   (lib (name "footprints")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/EG1206A/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "mounthole")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/mounthole.pretty")(options "")(descr ""))
-  (lib (name "Keebio-Parts")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/Keebio-Parts.pretty")(options "")(descr ""))
   (lib (name "nice-nano-kicad")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/nice-nano-kicad")(options "")(descr ""))
   (lib (name "MX_Hotswap")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/MX_V2/MX_Hotswap.pretty")(options "")(descr ""))
 )
