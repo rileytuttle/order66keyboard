@@ -68,6 +68,10 @@
           "increased pad for socket head"
         ],
         [
+          "lib_footprint_mismatch|160772500|79500000|9e87020f-c630-40b5-9d8b-e8f9f5e4550f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|204062500|109600000|2462a8ff-1959-48df-b141-1d042d5c52d1|00000000-0000-0000-0000-000000000000",
           "increased pad diam for socket head"
         ],
@@ -76,12 +80,20 @@
           "increased pad diam for socket head"
         ],
         [
+          "lib_footprint_mismatch|227762500|78500000|1a7407f4-b387-46d1-824f-8d40819ec86e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|280262500|109600000|b51224e7-203d-40bd-96c3-ffaa06c3ab61|00000000-0000-0000-0000-000000000000",
           "increased pad diam for socket head"
         ],
         [
           "lib_footprint_mismatch|280262500|147700000|986b9a3b-ae44-42fb-88a6-4dd6c23fde6c|00000000-0000-0000-0000-000000000000",
           "increased pad diam for socket head"
+        ],
+        [
+          "lib_footprint_mismatch|285663400|64502800|86426124-7b5c-46bd-b841-61abb6b68364|00000000-0000-0000-0000-000000000000",
+          ""
         ]
       ],
       "meta": {

@@ -1,5 +1,6 @@
-./order66-backups/*
+./order66-backups
 ./#auto_saved_files#
 ./_autosave*
-./*kicad_sch.lck*
-
+./.*lck.*
+./kbplacer.log
+./#auto_saved_files#
