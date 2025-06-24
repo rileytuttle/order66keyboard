@@ -995,7 +995,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N47xxA"
+		(symbol "Diode:1N4148"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1013,7 +1013,7 @@
 					)
 				)
 			)
-			(property "Value" "1N47xxA"
+			(property "Value" "1N4148"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1021,16 +1021,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1039,7 +1030,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1048,7 +1039,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "zener diode"
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1057,7 +1048,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?41*"
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1066,10 +1057,49 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N47xxA_0_1"
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1091,20 +1121,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
-			(symbol "1N47xxA_1_1"
+			(symbol "1N4148_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -5194,7 +5212,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 208.28 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5221,16 +5239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 212.725 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -5239,7 +5248,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 208.28 76.2 0)
 			(effects
 				(font
@@ -5264,7 +5300,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 208.28 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5291,16 +5327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 212.725 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 208.28 110.49 0)
 			(effects
 				(font
@@ -5309,7 +5336,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 208.28 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 208.28 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 208.28 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 208.28 110.49 0)
 			(effects
 				(font
@@ -5334,7 +5388,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 119.38 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5361,16 +5415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 123.825 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 119.38 110.49 0)
 			(effects
 				(font
@@ -5379,7 +5424,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 119.38 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 119.38 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 119.38 110.49 0)
 			(effects
 				(font
@@ -5602,7 +5674,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 132.08 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5629,16 +5701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 136.525 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 132.08 87.63 0)
 			(effects
 				(font
@@ -5647,7 +5710,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 132.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 132.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 132.08 87.63 0)
 			(effects
 				(font
@@ -5739,7 +5829,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 106.68 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5766,16 +5856,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 111.125 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 106.68 99.06 0)
 			(effects
 				(font
@@ -5784,7 +5865,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 106.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 106.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 106.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 106.68 99.06 0)
 			(effects
 				(font
@@ -5876,7 +5984,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 144.78 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5903,16 +6011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 149.225 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 144.78 76.2 0)
 			(effects
 				(font
@@ -5921,7 +6020,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 144.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 144.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 144.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 144.78 76.2 0)
 			(effects
 				(font
@@ -6147,7 +6273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6174,16 +6300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 110.49 0)
 			(effects
 				(font
@@ -6192,7 +6309,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 110.49 0)
 			(effects
 				(font
@@ -6284,7 +6428,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6311,16 +6455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -6329,7 +6464,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -6421,7 +6583,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6448,16 +6610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 99.06 0)
 			(effects
 				(font
@@ -6466,7 +6619,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 99.06 0)
 			(effects
 				(font
@@ -6491,7 +6671,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6518,16 +6698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 64.77 0)
 			(effects
 				(font
@@ -6536,7 +6707,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 64.77 0)
 			(effects
 				(font
@@ -6762,7 +6960,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6789,16 +6987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 64.77 0)
 			(effects
 				(font
@@ -6807,7 +6996,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 64.77 0)
 			(effects
 				(font
@@ -7030,7 +7246,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7057,16 +7273,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 87.63 0)
 			(effects
 				(font
@@ -7075,7 +7282,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 87.63 0)
 			(effects
 				(font
@@ -7633,7 +7867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 132.08 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7660,16 +7894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 136.525 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 132.08 64.77 0)
 			(effects
 				(font
@@ -7678,7 +7903,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 132.08 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 132.08 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 132.08 64.77 0)
 			(effects
 				(font
@@ -7703,7 +7955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 106.68 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7730,16 +7982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 111.125 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 106.68 110.49 0)
 			(effects
 				(font
@@ -7748,7 +7991,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 106.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 106.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 106.68 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 106.68 110.49 0)
 			(effects
 				(font
@@ -7773,7 +8043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7800,16 +8070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 76.2 0)
 			(effects
 				(font
@@ -7818,7 +8079,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 76.2 0)
 			(effects
 				(font
@@ -7843,7 +8131,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7870,16 +8158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 87.63 0)
 			(effects
 				(font
@@ -7888,7 +8167,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 87.63 0)
 			(effects
 				(font
@@ -8047,7 +8353,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8074,16 +8380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 110.49 0)
 			(effects
 				(font
@@ -8092,7 +8389,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 110.49 0)
 			(effects
 				(font
@@ -8117,7 +8441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 106.68 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8144,16 +8468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 111.125 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 106.68 76.2 0)
 			(effects
 				(font
@@ -8162,7 +8477,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 106.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 106.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 106.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 106.68 76.2 0)
 			(effects
 				(font
@@ -8321,7 +8663,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8348,16 +8690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 99.06 0)
 			(effects
 				(font
@@ -8366,7 +8699,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 99.06 0)
 			(effects
 				(font
@@ -8526,7 +8886,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8553,16 +8913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 53.34 0)
 			(effects
 				(font
@@ -8571,7 +8922,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 53.34 0)
 			(effects
 				(font
@@ -8663,7 +9041,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8690,16 +9068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 76.2 0)
 			(effects
 				(font
@@ -8708,7 +9077,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 76.2 0)
 			(effects
 				(font
@@ -8931,7 +9327,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8958,16 +9354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 110.49 0)
 			(effects
 				(font
@@ -8976,7 +9363,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 110.49 0)
 			(effects
 				(font
@@ -9135,7 +9549,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 119.38 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9162,16 +9576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 123.825 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 119.38 64.77 0)
 			(effects
 				(font
@@ -9180,7 +9585,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 119.38 64.77 0)
 			(effects
 				(font
@@ -9205,7 +9637,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9232,16 +9664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 99.06 0)
 			(effects
 				(font
@@ -9250,7 +9673,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 99.06 0)
 			(effects
 				(font
@@ -9409,7 +9859,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9436,16 +9886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 64.77 0)
 			(effects
 				(font
@@ -9454,7 +9895,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 64.77 0)
 			(effects
 				(font
@@ -9747,7 +10215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9774,16 +10242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 53.34 0)
 			(effects
 				(font
@@ -9792,7 +10251,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 53.34 0)
 			(effects
 				(font
@@ -9817,7 +10303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9844,16 +10330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 64.77 0)
 			(effects
 				(font
@@ -9862,7 +10339,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 64.77 0)
 			(effects
 				(font
@@ -10027,7 +10531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 208.28 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10054,16 +10558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 212.725 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 208.28 87.63 0)
 			(effects
 				(font
@@ -10072,7 +10567,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 208.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 208.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 208.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 208.28 87.63 0)
 			(effects
 				(font
@@ -10097,7 +10619,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 144.78 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10124,16 +10646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 149.225 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 144.78 110.49 0)
 			(effects
 				(font
@@ -10142,7 +10655,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 144.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 144.78 110.49 0)
 			(effects
 				(font
@@ -10167,7 +10707,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 157.48 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10194,16 +10734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 161.925 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 157.48 87.63 0)
 			(effects
 				(font
@@ -10212,7 +10743,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 157.48 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 157.48 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 157.48 87.63 0)
 			(effects
 				(font
@@ -10371,7 +10929,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 157.48 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10398,16 +10956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 161.925 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 157.48 110.49 0)
 			(effects
 				(font
@@ -10416,7 +10965,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 157.48 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 157.48 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 157.48 110.49 0)
 			(effects
 				(font
@@ -10441,7 +11017,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 208.28 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10468,16 +11044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 212.725 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 208.28 64.77 0)
 			(effects
 				(font
@@ -10486,7 +11053,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 208.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 208.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 208.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 208.28 64.77 0)
 			(effects
 				(font
@@ -10511,7 +11105,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 119.38 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10538,16 +11132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 123.825 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 119.38 99.06 0)
 			(effects
 				(font
@@ -10556,7 +11141,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 119.38 99.06 0)
 			(effects
 				(font
@@ -10648,7 +11260,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 157.48 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10675,16 +11287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 161.925 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 157.48 64.77 0)
 			(effects
 				(font
@@ -10693,7 +11296,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 157.48 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 157.48 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 157.48 64.77 0)
 			(effects
 				(font
@@ -10853,7 +11483,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10880,16 +11510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 99.06 0)
 			(effects
 				(font
@@ -10898,7 +11519,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 99.06 0)
 			(effects
 				(font
@@ -10923,7 +11571,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10950,16 +11598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 110.49 0)
 			(effects
 				(font
@@ -10968,7 +11607,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 110.49 0)
 			(effects
 				(font
@@ -10993,7 +11659,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11020,16 +11686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 87.63 0)
 			(effects
 				(font
@@ -11038,7 +11695,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 87.63 0)
 			(effects
 				(font
@@ -11197,7 +11881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11224,16 +11908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 99.06 0)
 			(effects
 				(font
@@ -11242,7 +11917,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 99.06 0)
 			(effects
 				(font
@@ -11334,7 +12036,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 208.28 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11361,16 +12063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 212.725 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 208.28 99.06 0)
 			(effects
 				(font
@@ -11379,7 +12072,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 208.28 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 208.28 99.06 0)
 			(effects
 				(font
@@ -11404,7 +12124,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 132.08 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11431,16 +12151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 136.525 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 132.08 76.2 0)
 			(effects
 				(font
@@ -11449,7 +12160,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 132.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 132.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 132.08 76.2 0)
 			(effects
 				(font
@@ -11541,7 +12279,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 132.08 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11568,16 +12306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 136.525 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 132.08 110.49 0)
 			(effects
 				(font
@@ -11586,7 +12315,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 132.08 110.49 0)
 			(effects
 				(font
@@ -11742,7 +12498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 157.48 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11769,16 +12525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 161.925 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -11787,7 +12534,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 157.48 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 157.48 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -11946,7 +12720,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11973,16 +12747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 76.2 0)
 			(effects
 				(font
@@ -11991,7 +12756,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 76.2 0)
 			(effects
 				(font
@@ -12083,7 +12875,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 132.08 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12110,16 +12902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 136.525 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 132.08 99.06 0)
 			(effects
 				(font
@@ -12128,7 +12911,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 132.08 99.06 0)
 			(effects
 				(font
@@ -12153,7 +12963,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12180,16 +12990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -12198,7 +12999,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 87.63 0)
 			(effects
 				(font
@@ -12223,7 +13051,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 144.78 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12250,16 +13078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 149.225 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 144.78 87.63 0)
 			(effects
 				(font
@@ -12268,7 +13087,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 144.78 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 144.78 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 144.78 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 144.78 87.63 0)
 			(effects
 				(font
@@ -12293,7 +13139,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12320,16 +13166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 64.77 0)
 			(effects
 				(font
@@ -12338,7 +13175,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 64.77 0)
 			(effects
 				(font
@@ -12430,7 +13294,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 220.98 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12457,16 +13321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 225.425 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 220.98 87.63 0)
 			(effects
 				(font
@@ -12475,7 +13330,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 220.98 87.63 0)
 			(effects
 				(font
@@ -12567,7 +13449,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12594,16 +13476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 99.06 0)
 			(effects
 				(font
@@ -12612,7 +13485,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 99.06 0)
 			(effects
 				(font
@@ -12637,7 +13537,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12664,16 +13564,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 87.63 0)
 			(effects
 				(font
@@ -12682,7 +13573,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 87.63 0)
 			(effects
 				(font
@@ -12707,7 +13625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12734,16 +13652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 110.49 0)
 			(effects
 				(font
@@ -12752,7 +13661,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 110.49 0)
 			(effects
 				(font
@@ -12844,7 +13780,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 144.78 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12871,16 +13807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 149.225 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 144.78 99.06 0)
 			(effects
 				(font
@@ -12889,7 +13816,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 144.78 99.06 0)
 			(effects
 				(font
@@ -12914,7 +13868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12941,16 +13895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 110.49 0)
 			(effects
 				(font
@@ -12959,7 +13904,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 110.49 0)
 			(effects
 				(font
@@ -13394,7 +14366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 157.48 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13421,16 +14393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 161.925 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 157.48 99.06 0)
 			(effects
 				(font
@@ -13439,7 +14402,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 157.48 99.06 0)
 			(effects
 				(font
@@ -13531,7 +14521,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13558,16 +14548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 53.34 0)
 			(effects
 				(font
@@ -13576,7 +14557,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 53.34 0)
 			(effects
 				(font
@@ -13665,7 +14673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13692,16 +14700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 64.77 0)
 			(effects
 				(font
@@ -13710,7 +14709,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 64.77 0)
 			(effects
 				(font
@@ -13735,7 +14761,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 106.68 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13762,16 +14788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 111.125 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 106.68 64.77 0)
 			(effects
 				(font
@@ -13780,7 +14797,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 106.68 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 106.68 64.77 0)
 			(effects
 				(font
@@ -13872,7 +14916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 93.98 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13899,16 +14943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 98.425 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 93.98 53.34 0)
 			(effects
 				(font
@@ -13917,7 +14952,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 93.98 53.34 0)
 			(effects
 				(font
@@ -14210,7 +15272,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 233.68 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14237,16 +15299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 238.125 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 233.68 76.2 0)
 			(effects
 				(font
@@ -14255,7 +15308,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 233.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 233.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 233.68 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 233.68 76.2 0)
 			(effects
 				(font
@@ -14560,7 +15640,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 195.58 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14587,16 +15667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 200.025 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 195.58 53.34 0)
 			(effects
 				(font
@@ -14605,7 +15676,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 195.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 195.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 195.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 195.58 53.34 0)
 			(effects
 				(font
@@ -14630,7 +15728,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 119.38 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14657,16 +15755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 123.825 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 119.38 87.63 0)
 			(effects
 				(font
@@ -14675,7 +15764,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 119.38 87.63 0)
 			(effects
 				(font
@@ -14700,7 +15816,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 170.18 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14727,16 +15843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 174.625 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 170.18 76.2 0)
 			(effects
 				(font
@@ -14745,7 +15852,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 170.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 170.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 170.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 170.18 76.2 0)
 			(effects
 				(font
@@ -14770,7 +15904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 106.68 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14797,16 +15931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 111.125 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 106.68 87.63 0)
 			(effects
 				(font
@@ -14815,7 +15940,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 106.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 106.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 106.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 106.68 87.63 0)
 			(effects
 				(font
@@ -14907,7 +16059,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 144.78 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14934,16 +16086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 149.225 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 144.78 64.77 0)
 			(effects
 				(font
@@ -14952,7 +16095,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 144.78 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 144.78 64.77 0)
 			(effects
 				(font
@@ -15044,7 +16214,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 182.88 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15071,16 +16241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 187.325 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 182.88 76.2 0)
 			(effects
 				(font
@@ -15089,7 +16250,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 182.88 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 182.88 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 182.88 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 182.88 76.2 0)
 			(effects
 				(font
@@ -15181,7 +16369,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N47xxA")
+		(lib_id "Diode:1N4148")
 		(at 119.38 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15208,16 +16396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 123.825 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85816/1n4728a.pdf"
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 119.38 76.2 0)
 			(effects
 				(font
@@ -15226,7 +16405,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1300mW Silicon planar power Zener diodes, DO-41"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 119.38 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 119.38 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 119.38 76.2 0)
 			(effects
 				(font
