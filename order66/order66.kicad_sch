@@ -5,7 +5,7 @@
 	(uuid "4342f055-467b-4789-a8ed-b19f1b214d4d")
 	(paper "A4")
 	(lib_symbols
-		(symbol "1042:1042"
+		(symbol "1043:1043P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -21,7 +21,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "1042"
+			(property "Value" "1043P"
 				(at -3.81 -5.08 0)
 				(effects
 					(font
@@ -30,7 +30,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "1042:BAT_1042"
+			(property "Footprint" "1043P:BAT_1043P"
 				(at 0 0 0)
 				(effects
 					(font
@@ -58,47 +58,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Keystone Electronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "NON STANDARD-5 Keystone"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/1042/Keystone/view-part/?ref=eda"
+			(property "PARTREV" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -118,7 +78,7 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "E"
+			(property "SNAPEDA_PN" "1043P"
 				(at 0 0 0)
 				(effects
 					(font
@@ -128,47 +88,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/1042/Keystone/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "1042"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Battery Holder (Open) 18650 1 Cell SMD (SMT) Tab"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SNAPEDA_PN" "1042"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "15.11mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -188,7 +108,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1042_0_0"
+			(symbol "1043P_0_0"
 				(polyline
 					(pts
 						(xy -3.81 1.905) (xy -2.54 1.905)
@@ -215,7 +135,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -1.27 0)
+						(xy -1.27 2.54) (xy -1.27 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -239,31 +159,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 -1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -3979,9 +3875,9 @@
 			)
 		)
 	)
-	(global_label "COL9"
+	(global_label "COL10"
 		(shape input)
-		(at 46.99 100.33 270)
+		(at 36.83 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3989,36 +3885,14 @@
 			)
 			(justify right)
 		)
-		(uuid "075f9b65-62de-4447-9f74-ee1a268eab34")
+		(uuid "0fdcb3f0-299e-4a94-b6be-4ba89d37d637")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 108.1533 90)
+			(at 27.7972 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ROW1"
-		(shape input)
-		(at 72.39 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0ef1ee26-fe77-419b-96ed-4e72b9b72034")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6366 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -4045,6 +3919,28 @@
 			)
 		)
 	)
+	(global_label "COL8"
+		(shape input)
+		(at 54.61 100.33 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "11e61e30-2687-4b41-b513-b8dffc588daf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 54.61 108.1533 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 36.83 64.77 180)
@@ -4067,6 +3963,28 @@
 			)
 		)
 	)
+	(global_label "ROW3"
+		(shape input)
+		(at 72.39 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17fb964e-58e6-42c2-86e4-abfb4fdc9643")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.6366 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "COL8"
 		(shape input)
 		(at 205.74 45.974 90)
@@ -4080,28 +3998,6 @@
 		(uuid "18245556-8df9-45f1-a65d-ae00fc61e65c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 205.6606 37.6022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COL1"
-		(shape input)
-		(at 72.39 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1f2c4130-bdc2-4ca6-a8dc-3642e9e2234f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.2133 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4155,28 +4051,6 @@
 			)
 		)
 	)
-	(global_label "ROW4"
-		(shape input)
-		(at 72.39 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3783ec60-2029-4940-ac6d-8e2e2c548fbc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6366 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "BATT+"
 		(shape input)
 		(at 39.37 158.75 0)
@@ -4212,28 +4086,6 @@
 		(uuid "39f54fe1-6a89-430a-8792-2d93bf49ac57")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.0067 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COL8"
-		(shape input)
-		(at 36.83 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4b6bb559-76c7-42db-8495-7c6125cffda0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.0067 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,6 +4174,50 @@
 		(uuid "5d3d5b03-6f76-4b80-ba78-e7bb8a89e75b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 31.3653 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW2"
+		(shape input)
+		(at 72.39 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d6ae453-b5a6-4588-8862-f59b167abb02")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.6366 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL9"
+		(shape input)
+		(at 36.83 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "677ee85b-0411-4b60-9c92-d9a015d7e2cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.0067 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,6 +4403,28 @@
 			)
 		)
 	)
+	(global_label "COL1"
+		(shape input)
+		(at 72.39 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7debd95b-8497-4bc6-b732-f560e109c445")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.2133 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "COL6"
 		(shape input)
 		(at 36.83 82.55 180)
@@ -4520,6 +4438,28 @@
 		(uuid "7e72b620-36e9-4aa8-b1ca-b56a89612fcf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 29.0067 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL7"
+		(shape input)
+		(at 50.8 100.33 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f0953f7-5241-427f-8470-f1210118ca22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.8 108.1533 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4661,7 +4601,7 @@
 			)
 		)
 	)
-	(global_label "ROW2"
+	(global_label "ROW1"
 		(shape input)
 		(at 72.39 72.39 0)
 		(fields_autoplaced yes)
@@ -4671,75 +4611,9 @@
 			)
 			(justify left)
 		)
-		(uuid "9fcfc5bc-fab0-4263-8312-6fc694baf9f7")
+		(uuid "acf6f3a7-45fc-4bbb-8961-47abce0a8bf2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.6366 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ROW0"
-		(shape input)
-		(at 72.39 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a1efb70d-d453-4a94-8ff8-3da38943b2b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6366 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COL11"
-		(shape input)
-		(at 54.61 100.33 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a6543b66-5982-471b-b0f0-fe42a4858fc9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.61 109.3628 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ROW3"
-		(shape input)
-		(at 72.39 77.47 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b0a770b2-802f-46a5-9f4d-c5759d620291")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6366 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,24 +4667,24 @@
 			)
 		)
 	)
-	(global_label "COL7"
+	(global_label "ROW4"
 		(shape input)
-		(at 36.83 85.09 180)
+		(at 72.39 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "b830e801-86a6-4f03-932c-31467b2662e6")
+		(uuid "b5ee4a0e-0f7e-4a5a-bd99-2562cf76c91c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.0067 85.09 0)
+			(at 80.6366 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4925,6 +4799,28 @@
 			)
 		)
 	)
+	(global_label "ROW0"
+		(shape input)
+		(at 72.39 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de2eebb4-e9e7-436d-a100-bf8befe5a73f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.6366 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "COL7"
 		(shape input)
 		(at 193.04 45.974 90)
@@ -5026,6 +4922,28 @@
 		(uuid "e83b6787-3a23-4656-a8a7-73fc290eadd5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.9148 114.3794 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL11"
+		(shape input)
+		(at 46.99 100.33 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eacb6272-d717-4879-814e-f96d16157de6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.99 109.3628 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,28 +5087,6 @@
 	)
 	(global_label "COL10"
 		(shape input)
-		(at 50.8 100.33 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f9ee31e1-12b3-46b5-afec-18b8084394b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.8 109.3628 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COL10"
-		(shape input)
 		(at 231.14 45.974 90)
 		(fields_autoplaced yes)
 		(effects
@@ -5229,7 +5125,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 210.82 77.4699 90)
 			(effects
 				(font
@@ -5317,7 +5213,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 210.82 111.7599 90)
 			(effects
 				(font
@@ -5405,7 +5301,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 121.92 111.7599 90)
 			(effects
 				(font
@@ -5691,7 +5587,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 134.62 88.8999 90)
 			(effects
 				(font
@@ -5846,7 +5742,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 109.22 100.3299 90)
 			(effects
 				(font
@@ -6001,7 +5897,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 147.32 77.4699 90)
 			(effects
 				(font
@@ -6290,7 +6186,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 111.7599 90)
 			(effects
 				(font
@@ -6445,7 +6341,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 54.6099 90)
 			(effects
 				(font
@@ -6600,7 +6496,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 100.3299 90)
 			(effects
 				(font
@@ -6688,7 +6584,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 66.0399 90)
 			(effects
 				(font
@@ -6977,7 +6873,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 66.0399 90)
 			(effects
 				(font
@@ -7263,7 +7159,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 88.8999 90)
 			(effects
 				(font
@@ -7401,7 +7297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "1042:1042")
+		(lib_id "1043:1043P")
 		(at 81.28 154.94 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7428,7 +7324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1042:BAT_1042"
+		(property "Footprint" "1043P:BAT_1043P"
 			(at 81.28 154.94 0)
 			(effects
 				(font
@@ -7516,7 +7412,7 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "E"
+		(property "PARTREV" "D"
 			(at 81.28 154.94 0)
 			(effects
 				(font
@@ -7556,7 +7452,7 @@
 				(hide yes)
 			)
 		)
-		(property "SNAPEDA_PN" "1042"
+		(property "SNAPEDA_PN" "1043P"
 			(at 81.28 154.94 0)
 			(effects
 				(font
@@ -7884,7 +7780,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 134.62 66.0399 90)
 			(effects
 				(font
@@ -7972,7 +7868,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 109.22 111.7599 90)
 			(effects
 				(font
@@ -8060,7 +7956,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 77.4699 90)
 			(effects
 				(font
@@ -8148,7 +8044,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 88.8999 90)
 			(effects
 				(font
@@ -8370,7 +8266,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 111.7599 90)
 			(effects
 				(font
@@ -8458,7 +8354,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 109.22 77.4699 90)
 			(effects
 				(font
@@ -8680,7 +8576,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 100.3299 90)
 			(effects
 				(font
@@ -8776,7 +8672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 34.29 158.75 0)
 			(effects
 				(font
@@ -8903,7 +8799,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 54.6099 90)
 			(effects
 				(font
@@ -9058,7 +8954,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 77.4699 90)
 			(effects
 				(font
@@ -9344,7 +9240,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 111.7599 90)
 			(effects
 				(font
@@ -9566,7 +9462,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 121.92 66.0399 90)
 			(effects
 				(font
@@ -9654,7 +9550,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 100.3299 90)
 			(effects
 				(font
@@ -9876,7 +9772,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 66.0399 90)
 			(effects
 				(font
@@ -10232,7 +10128,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 54.6099 90)
 			(effects
 				(font
@@ -10320,7 +10216,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 66.0399 90)
 			(effects
 				(font
@@ -10548,7 +10444,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 210.82 88.8999 90)
 			(effects
 				(font
@@ -10636,7 +10532,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 147.32 111.7599 90)
 			(effects
 				(font
@@ -10724,7 +10620,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 160.02 88.8999 90)
 			(effects
 				(font
@@ -10946,7 +10842,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 160.02 111.7599 90)
 			(effects
 				(font
@@ -11034,7 +10930,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 210.82 66.0399 90)
 			(effects
 				(font
@@ -11122,7 +11018,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 121.92 100.3299 90)
 			(effects
 				(font
@@ -11277,7 +11173,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 160.02 66.0399 90)
 			(effects
 				(font
@@ -11440,7 +11336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3342"
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx"
 			(at 34.29 106.68 0)
 			(effects
 				(font
@@ -11500,7 +11396,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 100.3299 90)
 			(effects
 				(font
@@ -11588,7 +11484,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 111.7599 90)
 			(effects
 				(font
@@ -11676,7 +11572,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 88.8999 90)
 			(effects
 				(font
@@ -11898,7 +11794,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 100.3299 90)
 			(effects
 				(font
@@ -12053,7 +11949,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 210.82 100.3299 90)
 			(effects
 				(font
@@ -12141,7 +12037,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 134.62 77.4699 90)
 			(effects
 				(font
@@ -12296,7 +12192,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 134.62 111.7599 90)
 			(effects
 				(font
@@ -12515,7 +12411,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 160.02 77.4699 90)
 			(effects
 				(font
@@ -12737,7 +12633,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 77.4699 90)
 			(effects
 				(font
@@ -12892,7 +12788,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 134.62 100.3299 90)
 			(effects
 				(font
@@ -12980,7 +12876,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 88.8999 90)
 			(effects
 				(font
@@ -13068,7 +12964,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 147.32 88.8999 90)
 			(effects
 				(font
@@ -13156,7 +13052,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 66.0399 90)
 			(effects
 				(font
@@ -13311,7 +13207,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 223.52 88.8999 90)
 			(effects
 				(font
@@ -13466,7 +13362,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 100.3299 90)
 			(effects
 				(font
@@ -13554,7 +13450,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 88.8999 90)
 			(effects
 				(font
@@ -13642,7 +13538,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 111.7599 90)
 			(effects
 				(font
@@ -13797,7 +13693,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 147.32 100.3299 90)
 			(effects
 				(font
@@ -13885,7 +13781,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 111.7599 90)
 			(effects
 				(font
@@ -14383,7 +14279,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 160.02 100.3299 90)
 			(effects
 				(font
@@ -14538,7 +14434,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 54.6099 90)
 			(effects
 				(font
@@ -14690,7 +14586,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 66.0399 90)
 			(effects
 				(font
@@ -14778,7 +14674,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 109.22 66.0399 90)
 			(effects
 				(font
@@ -14933,7 +14829,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 96.52 54.6099 90)
 			(effects
 				(font
@@ -15289,7 +15185,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 236.22 77.4699 90)
 			(effects
 				(font
@@ -15657,7 +15553,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 198.12 54.6099 90)
 			(effects
 				(font
@@ -15745,7 +15641,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 121.92 88.8999 90)
 			(effects
 				(font
@@ -15833,7 +15729,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 172.72 77.4699 90)
 			(effects
 				(font
@@ -15921,7 +15817,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 109.22 88.8999 90)
 			(effects
 				(font
@@ -16076,7 +15972,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 147.32 66.0399 90)
 			(effects
 				(font
@@ -16231,7 +16127,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 185.42 77.4699 90)
 			(effects
 				(font
@@ -16386,7 +16282,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1N47xxA"
+		(property "Value" "1N4148"
 			(at 121.92 77.4699 90)
 			(effects
 				(font
