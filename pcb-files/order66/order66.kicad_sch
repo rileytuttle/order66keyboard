@@ -1058,6 +1058,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -1846,10 +2013,34 @@
 		)
 	)
 	(junction
+		(at 219.71 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "020a8c71-76b9-461d-b4ff-40c1e7fd0edc")
+	)
+	(junction
+		(at 144.78 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0295e2d9-3bb4-4858-9044-bb6dbbc3d4af")
+	)
+	(junction
 		(at 243.84 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03c5a4f2-bbd2-4a03-a25c-585e3b505947")
+	)
+	(junction
+		(at 232.41 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "044321b1-16a0-4784-9b8b-53d4b9dbcf0b")
+	)
+	(junction
+		(at 93.98 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "055aca45-c581-474d-8757-316bad709337")
 	)
 	(junction
 		(at 93.98 114.3)
@@ -1864,6 +2055,30 @@
 		(uuid "07d40783-418f-42b3-8f46-936b3697e5e6")
 	)
 	(junction
+		(at 170.18 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08a371ae-95de-4c90-a436-0ba456c11e56")
+	)
+	(junction
+		(at 168.91 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08f85ad1-597b-4f66-9aef-aa4366d0b0f9")
+	)
+	(junction
+		(at 93.98 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09c41849-97d1-4517-b70d-d0e19aee5646")
+	)
+	(junction
+		(at 195.58 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0afd4417-e9ce-4994-aab0-2755bea967a6")
+	)
+	(junction
 		(at 142.24 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1874,6 +2089,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d4aadb2-805b-4185-a07f-1955cbe5cef1")
+	)
+	(junction
+		(at 219.71 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e81ed61-523e-4d5c-ba16-65c1e467062c")
 	)
 	(junction
 		(at 193.04 49.53)
@@ -1900,10 +2121,40 @@
 		(uuid "11ebc8d5-1919-4573-b77e-e421cb79441b")
 	)
 	(junction
+		(at 143.51 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "124f3e18-98f0-4530-90ed-b370c563cd0c")
+	)
+	(junction
 		(at 106.68 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12960b44-6d2f-468f-aa4e-29cf67ac1df8")
+	)
+	(junction
+		(at 143.51 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12d918f1-8984-435e-92a0-b58938500769")
+	)
+	(junction
+		(at 132.08 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16256a47-ae3f-4bc1-b704-33a5fb59097e")
+	)
+	(junction
+		(at 220.98 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "195090e3-24b0-41ba-8f21-aecc09ef5018")
+	)
+	(junction
+		(at 232.41 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1abcbf5c-400d-4962-86e9-66ff7a0549db")
 	)
 	(junction
 		(at 119.38 68.58)
@@ -1948,6 +2199,12 @@
 		(uuid "218314c0-8291-4b69-bfd5-113c9f86c801")
 	)
 	(junction
+		(at 207.01 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23bff2c5-6e60-4124-90cc-e009fb2c2e6c")
+	)
+	(junction
 		(at 193.04 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1958,6 +2215,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25a1862f-7089-47a5-9d55-89083ba180e8")
+	)
+	(junction
+		(at 233.68 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2642c4e2-ecaa-4a30-a4cd-904664bb6d52")
 	)
 	(junction
 		(at 132.08 68.58)
@@ -1978,6 +2241,12 @@
 		(uuid "2923f3cf-17c7-4bb1-9c78-a33fe6505e7b")
 	)
 	(junction
+		(at 208.28 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29641903-1dcc-4095-a733-490b4cab3479")
+	)
+	(junction
 		(at 154.94 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1996,6 +2265,18 @@
 		(uuid "2c125318-7501-4d39-9067-cd345169df0e")
 	)
 	(junction
+		(at 170.18 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c65dc77-07da-43c6-adf2-8e10bd17a263")
+	)
+	(junction
+		(at 143.51 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d04fcd2-a6cc-4679-bf3f-0e58c08dd5f4")
+	)
+	(junction
 		(at 180.34 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2006,6 +2287,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ea2a2d7-bffb-4147-9a62-1709753e0f86")
+	)
+	(junction
+		(at 157.48 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ec025ab-ba58-43e3-9fa7-88c6ce18f55f")
+	)
+	(junction
+		(at 106.68 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2faac8ee-4ac8-465f-b591-350a3c25914f")
 	)
 	(junction
 		(at 104.14 95.25)
@@ -2020,6 +2313,12 @@
 		(uuid "33dad7d8-1cb7-403d-8bf4-f85563dca6ad")
 	)
 	(junction
+		(at 130.81 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34cf95a4-5ffc-46f8-b1e8-3f61d1a6f3b8")
+	)
+	(junction
 		(at 205.74 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2032,10 +2331,58 @@
 		(uuid "35bc3d8b-ba0f-4e49-8f59-400cf1ea1c44")
 	)
 	(junction
+		(at 181.61 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "367b3102-2647-4249-9a2c-f27802b9f5cc")
+	)
+	(junction
+		(at 157.48 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36b380dd-211d-4585-bd85-88dc2e05bbe6")
+	)
+	(junction
 		(at 170.18 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36f0e2d9-88f2-46df-8a9e-6a75c54bb027")
+	)
+	(junction
+		(at 233.68 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3817720c-682d-4a97-9422-86da626f807d")
+	)
+	(junction
+		(at 233.68 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38e46ec0-beb4-49fb-8da2-fa2422e97701")
+	)
+	(junction
+		(at 181.61 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "394e65da-cb49-4947-9f5d-c335c0637fe3")
+	)
+	(junction
+		(at 219.71 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39ad5fef-35ba-4125-8d28-25a2c6bf1bf1")
+	)
+	(junction
+		(at 168.91 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a2aaf3f-1909-4d30-a1b7-7c196ea3de41")
+	)
+	(junction
+		(at 207.01 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b5d94bc-cd8e-41f7-84a4-8fbbfb7858b7")
 	)
 	(junction
 		(at 167.64 60.96)
@@ -2050,16 +2397,34 @@
 		(uuid "3d88737b-5440-4df6-881e-3563e7c43775")
 	)
 	(junction
+		(at 105.41 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3da32768-fd78-43f7-a153-e51f8ef738b9")
+	)
+	(junction
 		(at 144.78 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3de2ffcd-090b-43f2-9a3f-af0c2749ac3a")
 	)
 	(junction
+		(at 232.41 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40c718f4-9a09-4589-b790-20010b61a7c7")
+	)
+	(junction
 		(at 116.84 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "410fc3c3-c0e5-475c-af1f-14cfe861332e")
+	)
+	(junction
+		(at 182.88 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41a56ae2-41ae-4275-8a04-1ae1c029e4bd")
 	)
 	(junction
 		(at 132.08 80.01)
@@ -2074,10 +2439,34 @@
 		(uuid "4309d85b-ea12-4ba1-bece-84e03a5b09bc")
 	)
 	(junction
+		(at 118.11 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "452355ca-5bda-4cd5-9b06-b489ed00b6bf")
+	)
+	(junction
+		(at 195.58 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "454c4a52-d54d-4f9c-aaa9-34562416b2c4")
+	)
+	(junction
+		(at 208.28 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45b2c159-8de8-4a8d-a6e7-71a6ccf87150")
+	)
+	(junction
 		(at 167.64 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45b983e1-d1e5-4b10-a837-09243f334ec9")
+	)
+	(junction
+		(at 182.88 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45d4d6d9-e551-4e12-b743-c89c86aa35eb")
 	)
 	(junction
 		(at 208.28 80.01)
@@ -2092,6 +2481,18 @@
 		(uuid "48059940-c20c-482d-b305-3d5f0e2d91d5")
 	)
 	(junction
+		(at 195.58 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a3ab055-91c7-4bf0-8841-d83751f54010")
+	)
+	(junction
+		(at 232.41 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4add99cd-165d-468f-84d7-3f4d9403979a")
+	)
+	(junction
 		(at 144.78 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2104,16 +2505,100 @@
 		(uuid "4b4aba2d-a5a9-4faf-9a96-a2c41416a890")
 	)
 	(junction
+		(at 93.98 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b59a9fa-99b8-441f-a5a3-778f50155a12")
+	)
+	(junction
+		(at 144.78 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c6a3bf6-2ef6-44be-81c6-651ff363394e")
+	)
+	(junction
+		(at 233.68 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ca404b9-abd8-4b4a-9512-b0f8be8ce522")
+	)
+	(junction
+		(at 207.01 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4dc3239b-7c0e-405f-82f4-ad95a2a31a67")
+	)
+	(junction
+		(at 132.08 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f6f8c47-af96-47a4-84e6-b1af8e1b9392")
+	)
+	(junction
+		(at 194.31 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fe5dc6c-8bbd-4944-99c8-495baaeef106")
+	)
+	(junction
+		(at 219.71 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "504e6502-3d4d-43d7-8418-510b97af99bf")
+	)
+	(junction
+		(at 144.78 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50aad4a3-7a1d-41c1-ad15-db0b1fd477e4")
+	)
+	(junction
 		(at 157.48 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5261aafe-4518-4faa-8b76-a47a4afc33d9")
 	)
 	(junction
+		(at 93.98 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "530b1fa8-f382-4d34-8196-805818f1088c")
+	)
+	(junction
+		(at 220.98 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53a60ae0-3a4a-42e7-a576-66fc3a71ca9d")
+	)
+	(junction
+		(at 182.88 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53c5134d-376a-41e4-b684-59fd1daa05c6")
+	)
+	(junction
+		(at 181.61 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53d852a8-8625-464c-8564-17d6dbf650c7")
+	)
+	(junction
+		(at 156.21 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55825aa9-c96f-48e1-b426-2dcc0e86aed1")
+	)
+	(junction
 		(at 243.84 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "579d75e5-c6de-4bf7-9fa3-f5b823c9f9f2")
+	)
+	(junction
+		(at 233.68 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58305047-7e72-4772-a99b-022868ed1470")
 	)
 	(junction
 		(at 208.28 114.3)
@@ -2146,16 +2631,40 @@
 		(uuid "5ff37e83-4938-4982-a07c-fc2c84ca659f")
 	)
 	(junction
+		(at 220.98 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60e70360-7c35-4c77-a98f-62b7e7adabae")
+	)
+	(junction
 		(at 154.94 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6116ca2a-b17c-40eb-a28f-e7c85930eac2")
 	)
 	(junction
+		(at 106.68 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61361834-0471-4f35-9594-c3b8c1588b40")
+	)
+	(junction
 		(at 167.64 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6327c7ec-bfb0-485a-985a-adc588259ed7")
+	)
+	(junction
+		(at 220.98 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65411e1f-3a0d-45a8-b090-cb47f2b9beab")
+	)
+	(junction
+		(at 105.41 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65e690f0-2b7e-4f77-aeba-6e5e2eed02bb")
 	)
 	(junction
 		(at 243.84 83.82)
@@ -2176,10 +2685,34 @@
 		(uuid "66b58699-b9d0-4ce5-bf3d-639c38173c09")
 	)
 	(junction
+		(at 118.11 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67652699-8672-4f21-8fe4-a00ca917c2e3")
+	)
+	(junction
+		(at 93.98 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68b1b5b5-562e-4929-a9b6-665b33e96d39")
+	)
+	(junction
 		(at 157.48 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69dd2957-ad91-4491-a701-9b0d5930aad0")
+	)
+	(junction
+		(at 195.58 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c651d63-d367-4023-b637-ee1e0b9de2bc")
+	)
+	(junction
+		(at 144.78 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6de6af75-bf1a-462b-8f9a-183ceea092f4")
 	)
 	(junction
 		(at 93.98 57.15)
@@ -2194,16 +2727,64 @@
 		(uuid "70034a5b-78e0-4187-bbd4-0bb9417f3405")
 	)
 	(junction
+		(at 130.81 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "716068e3-c856-424a-a8e8-3432d5d3d3e6")
+	)
+	(junction
+		(at 106.68 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7209e436-0041-4efb-b11d-28c392ce35d5")
+	)
+	(junction
+		(at 181.61 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72a5573e-4488-4703-99db-5abc67b22cb8")
+	)
+	(junction
+		(at 168.91 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72d3c4c4-8df6-4828-b2ca-b00316f4d5cf")
+	)
+	(junction
 		(at 129.54 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75d3bbf2-8d28-43fe-9c11-09b26b4e9429")
 	)
 	(junction
+		(at 170.18 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76c079e0-f802-494e-ba92-9998380e228e")
+	)
+	(junction
+		(at 157.48 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "775e7889-700f-4cc4-be17-a1910d27a8fd")
+	)
+	(junction
 		(at 170.18 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7790bd28-ccb7-42ff-8df8-59f0a589626a")
+	)
+	(junction
+		(at 118.11 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77cabed0-791f-4faa-bd00-8a69145947ff")
+	)
+	(junction
+		(at 118.11 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "795e47e7-d8c2-4a88-b869-57f298d14eea")
 	)
 	(junction
 		(at 144.78 68.58)
@@ -2218,10 +2799,46 @@
 		(uuid "79ab7761-c797-47f7-a159-b98c044cf9ce")
 	)
 	(junction
+		(at 194.31 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ad81386-21e4-4ba3-84f8-71d3cfa00bc2")
+	)
+	(junction
+		(at 182.88 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bc9fc30-517c-4142-b392-6c8d71ceba8b")
+	)
+	(junction
+		(at 119.38 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "806b4e17-a281-4348-9d47-e83a58bbab7d")
+	)
+	(junction
+		(at 194.31 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "832b7b84-d5a5-4b8d-a7f9-c0b67b3f3331")
+	)
+	(junction
+		(at 170.18 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "869e1aad-ff4d-4541-bbee-988edb90da08")
+	)
+	(junction
 		(at 116.84 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "889b84a9-a0e8-4878-805e-50e866140639")
+	)
+	(junction
+		(at 170.18 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8966fb25-5e08-451a-97f1-4106a8b9368e")
 	)
 	(junction
 		(at 119.38 91.44)
@@ -2234,6 +2851,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b232668-eee9-43d3-a64d-1e29092b906b")
+	)
+	(junction
+		(at 119.38 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bf628b0-b6b9-4ace-b25d-8fae319c03c6")
 	)
 	(junction
 		(at 195.58 80.01)
@@ -2252,6 +2875,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ff3ca63-ad0c-411a-bda4-c8e9d948d691")
+	)
+	(junction
+		(at 132.08 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "904a7fc4-bc18-439d-9171-9a49b3eabda2")
 	)
 	(junction
 		(at 154.94 95.25)
@@ -2296,10 +2925,10 @@
 		(uuid "964a1a1f-116a-41eb-aec9-ddb45286d68d")
 	)
 	(junction
-		(at 93.98 80.01)
+		(at 232.41 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "96d20b0c-fd92-4035-a602-c5a445366fc7")
+		(uuid "97e3f239-2e43-4ee4-b0a9-da7f00df9745")
 	)
 	(junction
 		(at 104.14 83.82)
@@ -2320,10 +2949,46 @@
 		(uuid "9b967352-d98d-4836-ad1a-877688c905dd")
 	)
 	(junction
+		(at 219.71 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c86cd88-ba65-41c3-a455-c78cc0cab8f8")
+	)
+	(junction
+		(at 105.41 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d292de3-3326-4d0d-be61-9baa4b24c6c9")
+	)
+	(junction
+		(at 93.98 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e9d4459-9342-44bd-b816-0a7b3a5eb6f3")
+	)
+	(junction
+		(at 130.81 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f3e4b27-4d2b-4ba9-afeb-daa3ed946f74")
+	)
+	(junction
 		(at 195.58 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f5c939e-3527-4812-8a82-0b83fc7bb795")
+	)
+	(junction
+		(at 119.38 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fb380e3-c219-4c96-ad80-13323fa8372e")
+	)
+	(junction
+		(at 182.88 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ff40fdc-425a-4051-a4dd-b829b4ba7ade")
 	)
 	(junction
 		(at 220.98 114.3)
@@ -2332,10 +2997,46 @@
 		(uuid "a310a727-586a-4877-a01d-3801c6e9b155")
 	)
 	(junction
+		(at 130.81 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a415af88-c750-4d7c-b10f-7bbe4b123e19")
+	)
+	(junction
+		(at 208.28 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4a72399-e2b5-4959-926d-9a5bfc95c0de")
+	)
+	(junction
 		(at 157.48 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a744390b-9fea-43b1-8bb9-ff05dd128ab9")
+	)
+	(junction
+		(at 93.98 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aae7fcd8-4efd-42b0-a452-ab9f609d77f5")
+	)
+	(junction
+		(at 105.41 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab5bbe92-1e80-4f7a-94ad-385c467684d0")
+	)
+	(junction
+		(at 207.01 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae118d71-5b84-4036-aef4-505e1aa24467")
+	)
+	(junction
+		(at 168.91 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af295228-6e7f-4a48-855f-101fa393a42c")
 	)
 	(junction
 		(at 170.18 80.01)
@@ -2350,6 +3051,18 @@
 		(uuid "afdfaafd-abd2-410d-88ff-705de4f2b755")
 	)
 	(junction
+		(at 208.28 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b10b3597-3fb4-41c8-b233-b9ad299c4ea3")
+	)
+	(junction
+		(at 194.31 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b169394a-ebc2-4d2e-8e22-5c0ca7ef85ff")
+	)
+	(junction
 		(at 220.98 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2360,6 +3073,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b25ee8d1-e021-407d-b345-a6ffb72ab614")
+	)
+	(junction
+		(at 119.38 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b351a948-358b-43ed-aef6-7f9a8fd34a8f")
+	)
+	(junction
+		(at 106.68 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b46b68b2-2fc5-431d-80f7-f1e37f1b0ee5")
 	)
 	(junction
 		(at 119.38 102.87)
@@ -2386,10 +3111,28 @@
 		(uuid "b69ae014-1564-4f65-8d8c-e77bd050c01b")
 	)
 	(junction
+		(at 156.21 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6e19959-6259-4f17-a9fb-242e31957d45")
+	)
+	(junction
 		(at 220.98 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b756e066-c1ef-4ab7-9ac7-768c05184915")
+	)
+	(junction
+		(at 170.18 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b95d4f4f-f60c-4cc0-b594-e552e5093174")
+	)
+	(junction
+		(at 156.21 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b96900d3-1805-4bb9-99cd-dedd5ed2deeb")
 	)
 	(junction
 		(at 195.58 114.3)
@@ -2398,10 +3141,28 @@
 		(uuid "ba5cef76-181e-4bca-89ec-736654f49cb3")
 	)
 	(junction
+		(at 182.88 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb1f3e53-f0e1-4373-b027-6db7c98d3189")
+	)
+	(junction
+		(at 143.51 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb8b0112-480a-4f8e-9e19-bb4885011f40")
+	)
+	(junction
 		(at 218.44 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc5e5685-e5b6-4796-8df5-b4ae4442e179")
+	)
+	(junction
+		(at 106.68 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf48acb2-fc7f-4cb1-b7d7-110dcca7d93e")
 	)
 	(junction
 		(at 132.08 91.44)
@@ -2410,16 +3171,52 @@
 		(uuid "bf9acca3-6623-49e5-8366-d6428f39336f")
 	)
 	(junction
+		(at 219.71 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0057c1f-0ca2-4de6-91af-15eb085058a9")
+	)
+	(junction
 		(at 205.74 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0cd7db7-121d-41df-aed2-e548ac9e0bb2")
 	)
 	(junction
+		(at 220.98 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c180baeb-7c05-4929-a445-d4959faeed3b")
+	)
+	(junction
 		(at 218.44 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c35307c6-a151-4818-92ed-81be5a145206")
+	)
+	(junction
+		(at 168.91 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c455ff37-5c22-47c4-aeda-a9c5c933f746")
+	)
+	(junction
+		(at 208.28 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c596063d-9a5c-4e4a-aded-af60742f1569")
+	)
+	(junction
+		(at 156.21 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c882afde-00bd-486f-8dc3-0bf38b881ebe")
+	)
+	(junction
+		(at 233.68 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c96ca00e-cf18-4ffa-a4b0-c4a238f4ab40")
 	)
 	(junction
 		(at 106.68 91.44)
@@ -2446,10 +3243,34 @@
 		(uuid "cd065cf1-8d81-4d8c-83b1-c791baa6c914")
 	)
 	(junction
+		(at 181.61 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfa1c754-adeb-423e-99aa-0bb99db2cd7a")
+	)
+	(junction
+		(at 194.31 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d30831f4-7dd0-4628-9b9b-5056db514ac5")
+	)
+	(junction
 		(at 218.44 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d38384ba-213c-47dd-8034-d1851f90f79c")
+	)
+	(junction
+		(at 232.41 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d53b4729-8e66-4839-999d-66675aae0eda")
+	)
+	(junction
+		(at 130.81 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5ce8be6-3bd7-46cb-b2c5-bdc3d26d8395")
 	)
 	(junction
 		(at 93.98 68.58)
@@ -2458,16 +3279,22 @@
 		(uuid "d8e74712-3f8e-4981-bff4-2cc40b4d0bee")
 	)
 	(junction
-		(at 93.98 91.44)
+		(at 220.98 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "db6e24e3-74ea-4fc1-b59e-208c9585c10b")
+		(uuid "dc22260a-cb4d-4566-9187-0c66c5e029bb")
 	)
 	(junction
 		(at 132.08 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc48721f-e9f2-4cc9-8ea7-790f53e376e7")
+	)
+	(junction
+		(at 181.61 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd7865e3-4049-49d5-bb6a-a7107920e403")
 	)
 	(junction
 		(at 243.84 72.39)
@@ -2494,10 +3321,28 @@
 		(uuid "e3198628-6414-407f-a2e7-48f602fc95c0")
 	)
 	(junction
+		(at 195.58 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e36cdaa3-d020-4001-8216-5065074f8a01")
+	)
+	(junction
 		(at 104.14 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5ffcad5-c4da-4eb4-a55f-4b51b9cb33ca")
+	)
+	(junction
+		(at 119.38 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7ec2f3f-a911-402a-9c68-6d537e6945c7")
+	)
+	(junction
+		(at 143.51 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e84d16c2-875f-46a0-ac5a-e8f0bc88dcd7")
 	)
 	(junction
 		(at 142.24 83.82)
@@ -2506,10 +3351,52 @@
 		(uuid "ec556d7d-8539-4b25-9088-c37dc2cad586")
 	)
 	(junction
+		(at 157.48 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edaa93a9-07a4-4a3c-8a8f-22c66b17642b")
+	)
+	(junction
+		(at 168.91 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef2a4488-1924-4a0c-9a1f-73337128a2f4")
+	)
+	(junction
+		(at 144.78 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efd332f0-6236-4eac-9776-959bc154450f")
+	)
+	(junction
 		(at 220.98 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eff8d4c6-2767-49d2-b7e1-852648a112f5")
+	)
+	(junction
+		(at 132.08 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0b22629-b2f2-4b17-afca-28db36dbb56a")
+	)
+	(junction
+		(at 93.98 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0c76f19-4a2f-46e4-80eb-dfb7c5d6cdf6")
+	)
+	(junction
+		(at 156.21 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2f07352-78a2-48b9-af45-3838db04e600")
+	)
+	(junction
+		(at 194.31 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f30dd712-4e1d-4487-8f39-04aae91cfa15")
 	)
 	(junction
 		(at 106.68 80.01)
@@ -2524,10 +3411,46 @@
 		(uuid "f5b9fff1-b893-4ada-948f-3a047daafe65")
 	)
 	(junction
+		(at 132.08 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f716f1a0-8c77-4625-bb88-6c19e4d9c926")
+	)
+	(junction
+		(at 118.11 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8a585cf-cc37-4679-b105-c79112ead6ea")
+	)
+	(junction
 		(at 157.48 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8fa6aef-b2be-4068-856f-0ce2f48e00b7")
+	)
+	(junction
+		(at 207.01 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f995a5af-6876-4ee5-a8b2-15baa72a981a")
+	)
+	(junction
+		(at 195.58 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbe9f797-0426-465a-83ee-6794a6944b75")
+	)
+	(junction
+		(at 105.41 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc64c618-64ad-4ea0-84d6-d5aa4d9776c4")
+	)
+	(junction
+		(at 157.48 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdf43fde-c7a1-4801-961f-ccc0916eec04")
 	)
 	(no_connect
 		(at 55.88 144.78)
@@ -2535,7 +3458,17 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 68.58) (xy 195.58 68.58)
+			(xy 219.71 49.53) (xy 220.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000e43e5-089f-41aa-b7e0-dfc0c62e4641")
+	)
+	(wire
+		(pts
+			(xy 182.88 68.58) (xy 194.31 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2555,7 +3488,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 114.3) (xy 208.28 114.3)
+			(xy 195.58 114.3) (xy 207.01 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2572,6 +3505,26 @@
 			(type default)
 		)
 		(uuid "00b881a8-70e3-4cac-9c0b-72d6bd596e04")
+	)
+	(wire
+		(pts
+			(xy 232.41 49.53) (xy 233.68 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ce018c-8127-486c-b1e9-0ca21c4c9720")
+	)
+	(wire
+		(pts
+			(xy 130.81 60.96) (xy 132.08 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "019ae7da-3ed8-4283-a929-ebf4e79486b2")
 	)
 	(wire
 		(pts
@@ -2595,7 +3548,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 57.15) (xy 195.58 57.15)
+			(xy 182.88 57.15) (xy 194.31 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2605,7 +3558,37 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 102.87) (xy 170.18 102.87)
+			(xy 194.31 60.96) (xy 195.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0229ebdb-3a85-47e6-add0-a376dd03910c")
+	)
+	(wire
+		(pts
+			(xy 105.41 114.3) (xy 106.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02360ff0-76c4-4cc2-b521-759794ab5e3c")
+	)
+	(wire
+		(pts
+			(xy 194.31 80.01) (xy 195.58 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e91cb7-5233-4058-9bd1-126489b97393")
+	)
+	(wire
+		(pts
+			(xy 157.48 102.87) (xy 168.91 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2635,13 +3618,23 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 57.15) (xy 182.88 57.15)
+			(xy 170.18 57.15) (xy 181.61 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "06a7c1db-66b8-4258-850e-030177f505f0")
+	)
+	(wire
+		(pts
+			(xy 168.91 68.58) (xy 170.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07d8d8bb-75e9-4932-a536-a1c647a8bacf")
 	)
 	(wire
 		(pts
@@ -2655,7 +3648,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 102.87) (xy 119.38 102.87)
+			(xy 106.68 102.87) (xy 118.11 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2665,13 +3658,53 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 57.15) (xy 233.68 57.15)
+			(xy 220.98 57.15) (xy 232.41 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "09c57404-c282-432a-b076-bb7825fa39e3")
+	)
+	(wire
+		(pts
+			(xy 219.71 114.3) (xy 220.98 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09c7559a-92a7-425c-bafc-d3dec7fcaa69")
+	)
+	(wire
+		(pts
+			(xy 105.41 95.25) (xy 106.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af26e40-9965-4922-8fb7-e15932a43705")
+	)
+	(wire
+		(pts
+			(xy 219.71 68.58) (xy 220.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cd19e4a-1d89-4ff7-a61f-66b627b62733")
+	)
+	(wire
+		(pts
+			(xy 92.71 49.53) (xy 93.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea0eab3-a722-4d2a-a089-6bb64f2bef8e")
 	)
 	(wire
 		(pts
@@ -2685,7 +3718,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 68.58) (xy 233.68 68.58)
+			(xy 220.98 68.58) (xy 232.41 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2695,7 +3728,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 80.01) (xy 144.78 80.01)
+			(xy 92.71 60.96) (xy 93.98 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11668c55-02dd-4c69-a124-f220878bee0d")
+	)
+	(wire
+		(pts
+			(xy 132.08 80.01) (xy 143.51 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2705,7 +3748,37 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 114.3) (xy 106.68 114.3)
+			(xy 207.01 68.58) (xy 208.28 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13b5cf94-6c0f-44f7-88fb-22763305375d")
+	)
+	(wire
+		(pts
+			(xy 156.21 91.44) (xy 157.48 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1963e3bc-2c36-4c0b-b5e5-48c65afddac4")
+	)
+	(wire
+		(pts
+			(xy 93.98 102.87) (xy 105.41 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196bedbc-c2d6-4491-b976-390b442ebbe6")
+	)
+	(wire
+		(pts
+			(xy 93.98 114.3) (xy 105.41 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2715,7 +3788,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 114.3) (xy 170.18 114.3)
+			(xy 157.48 114.3) (xy 168.91 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2725,13 +3798,33 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 68.58) (xy 220.98 68.58)
+			(xy 208.28 68.58) (xy 219.71 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1d3b8d84-51ac-42fc-ae28-dd7f145cfed1")
+	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 233.68 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed9e0d6-af8e-481c-9fc2-8593226daf87")
+	)
+	(wire
+		(pts
+			(xy 219.71 80.01) (xy 220.98 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f06e0f2-6ede-4169-a5dd-5738e5ad2eee")
 	)
 	(wire
 		(pts
@@ -2742,6 +3835,36 @@
 			(type default)
 		)
 		(uuid "20ef3cd2-b75d-4a2e-8531-0b39b54540c2")
+	)
+	(wire
+		(pts
+			(xy 143.51 102.87) (xy 144.78 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21392897-9a89-468d-a4a1-65ebbeb14257")
+	)
+	(wire
+		(pts
+			(xy 232.41 57.15) (xy 233.68 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237709a5-6a35-4e41-b7d5-3aabcf368e01")
+	)
+	(wire
+		(pts
+			(xy 143.51 80.01) (xy 144.78 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2631baa2-18b9-4af0-ba39-473cd0bdd24a")
 	)
 	(wire
 		(pts
@@ -2765,7 +3888,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 102.87) (xy 132.08 102.87)
+			(xy 119.38 102.87) (xy 130.81 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2775,7 +3898,27 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 80.01) (xy 208.28 80.01)
+			(xy 93.98 91.44) (xy 105.41 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d5f2cac-b9bd-41ab-abf0-1c77ba318947")
+	)
+	(wire
+		(pts
+			(xy 156.21 68.58) (xy 157.48 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ed959fd-4534-4507-97b0-45a72eb6ac76")
+	)
+	(wire
+		(pts
+			(xy 195.58 80.01) (xy 207.01 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2795,7 +3938,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 102.87) (xy 208.28 102.87)
+			(xy 195.58 102.87) (xy 207.01 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2805,13 +3948,63 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 102.87) (xy 93.98 102.87)
+			(xy 181.61 106.68) (xy 182.88 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3555e6e4-9348-4d51-b1e7-667dc1832163")
+		(uuid "32a99ebc-8ae5-4ac8-a251-2b1a8328570c")
+	)
+	(wire
+		(pts
+			(xy 118.11 80.01) (xy 119.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3516a7f4-b92a-4ac3-acef-690c74473bda")
+	)
+	(wire
+		(pts
+			(xy 118.11 95.25) (xy 119.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35be82dc-17a1-455b-88d0-82fc7e20746e")
+	)
+	(wire
+		(pts
+			(xy 194.31 102.87) (xy 195.58 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b3f9cb-15e1-44e5-beb8-16a514c4f58b")
+	)
+	(wire
+		(pts
+			(xy 181.61 60.96) (xy 182.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36ec3542-3ac9-46ca-ac14-bd4426ad2ca6")
+	)
+	(wire
+		(pts
+			(xy 232.41 106.68) (xy 233.68 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "385588f7-163d-4e04-8bb1-f1fb38c25a8e")
 	)
 	(wire
 		(pts
@@ -2822,6 +4015,16 @@
 			(type default)
 		)
 		(uuid "396fd0e9-233f-486b-a3b9-1c771d608e4a")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.01) (xy 92.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae676fb-d140-4985-8ec2-a51eafa753e6")
 	)
 	(wire
 		(pts
@@ -2855,7 +4058,17 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 91.44) (xy 220.98 91.44)
+			(xy 143.51 91.44) (xy 144.78 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e156da3-2fec-4a88-b3f3-4cebf29d2440")
+	)
+	(wire
+		(pts
+			(xy 208.28 91.44) (xy 219.71 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2875,6 +4088,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 80.01) (xy 208.28 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e4a91a-02df-493f-abe5-396f9117ea84")
+	)
+	(wire
+		(pts
+			(xy 194.31 49.53) (xy 195.58 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4100f6de-4b57-4974-ba2c-883fed385a2c")
+	)
+	(wire
+		(pts
 			(xy 104.14 72.39) (xy 104.14 83.82)
 		)
 		(stroke
@@ -2882,6 +4115,76 @@
 			(type default)
 		)
 		(uuid "41d74c38-38f2-4a30-82b5-009c000cef65")
+	)
+	(wire
+		(pts
+			(xy 194.31 72.39) (xy 195.58 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43eb8c7e-f792-4599-af6e-e0a6a4f66b9a")
+	)
+	(wire
+		(pts
+			(xy 194.31 91.44) (xy 195.58 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45960916-292f-4e1b-8c49-670167e87b6d")
+	)
+	(wire
+		(pts
+			(xy 143.51 60.96) (xy 144.78 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "465b3b8f-92b9-4185-b98f-2bf74e7149ec")
+	)
+	(wire
+		(pts
+			(xy 92.71 91.44) (xy 93.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "477397b9-df1c-4563-b759-f3eeed588beb")
+	)
+	(wire
+		(pts
+			(xy 118.11 72.39) (xy 119.38 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47a54ead-7aae-4aea-9f6b-1dc5ae4a389a")
+	)
+	(wire
+		(pts
+			(xy 181.61 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e7be52-8a04-4b6e-add1-938fa2f02004")
+	)
+	(wire
+		(pts
+			(xy 168.91 83.82) (xy 170.18 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c054552-d42e-4d42-ab43-d754fdc5af75")
 	)
 	(wire
 		(pts
@@ -2895,6 +4198,76 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 102.87) (xy 182.88 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc5b731-7d60-4101-82ee-2fe46ea666f6")
+	)
+	(wire
+		(pts
+			(xy 105.41 60.96) (xy 106.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d6bd803-79ea-44bd-8049-d31f3312c90c")
+	)
+	(wire
+		(pts
+			(xy 105.41 80.01) (xy 106.68 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506e3a4c-4c33-46f9-8478-da33abc26d6e")
+	)
+	(wire
+		(pts
+			(xy 105.41 72.39) (xy 106.68 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508ea57d-9414-426f-b600-55bac93d5f95")
+	)
+	(wire
+		(pts
+			(xy 219.71 83.82) (xy 220.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5159ee24-8dbb-4b4f-a1d0-85aefb73e4e5")
+	)
+	(wire
+		(pts
+			(xy 232.41 80.01) (xy 233.68 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522dc900-f7ef-42b6-baa2-f53bacf52713")
+	)
+	(wire
+		(pts
+			(xy 207.01 91.44) (xy 208.28 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e56a3e-92cd-4005-acb8-ee31509e3635")
+	)
+	(wire
+		(pts
 			(xy 129.54 72.39) (xy 129.54 83.82)
 		)
 		(stroke
@@ -2905,7 +4278,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 102.87) (xy 182.88 102.87)
+			(xy 170.18 102.87) (xy 181.61 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2915,7 +4288,27 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 80.01) (xy 132.08 80.01)
+			(xy 194.31 114.3) (xy 195.58 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573a141e-80dd-4ef8-80a0-121cdb091e71")
+	)
+	(wire
+		(pts
+			(xy 92.71 83.82) (xy 93.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57853866-d700-4258-bcf7-d771a5f07a48")
+	)
+	(wire
+		(pts
+			(xy 119.38 80.01) (xy 130.81 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2925,7 +4318,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 114.3) (xy 220.98 114.3)
+			(xy 208.28 114.3) (xy 219.71 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2935,7 +4328,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 80.01) (xy 157.48 80.01)
+			(xy 181.61 72.39) (xy 182.88 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ff5e69-3fea-4aca-9e06-96b78a6dcaf5")
+	)
+	(wire
+		(pts
+			(xy 144.78 80.01) (xy 156.21 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2955,17 +4358,17 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 102.87) (xy 106.68 102.87)
+			(xy 219.71 57.15) (xy 220.98 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a1ee34a-a8b0-423c-ba16-64de1aa03fb3")
+		(uuid "5d71ae54-8dc2-4852-84de-d408996df15b")
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 182.88 68.58)
+			(xy 170.18 68.58) (xy 181.61 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2975,7 +4378,27 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 68.58) (xy 132.08 68.58)
+			(xy 219.71 106.68) (xy 220.98 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dfcb130-1839-4ba0-a2e1-6a03f2ec0b26")
+	)
+	(wire
+		(pts
+			(xy 156.21 95.25) (xy 157.48 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e3e3061-aef2-4117-9fae-2e85aa0fe13b")
+	)
+	(wire
+		(pts
+			(xy 119.38 68.58) (xy 130.81 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2985,13 +4408,33 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 80.01) (xy 170.18 80.01)
+			(xy 157.48 80.01) (xy 168.91 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "60ea2b38-d154-43d8-b4e4-e0efe6ed35f3")
+	)
+	(wire
+		(pts
+			(xy 207.01 102.87) (xy 208.28 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616ee8a6-7bec-44b0-a380-b9a16a0848c5")
+	)
+	(wire
+		(pts
+			(xy 168.91 49.53) (xy 170.18 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "622ded46-db7e-4cf0-8d80-c76e607c360c")
 	)
 	(wire
 		(pts
@@ -3025,6 +4468,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 106.68) (xy 157.48 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "673593ba-fabe-4835-b52b-86adcfc058e9")
+	)
+	(wire
+		(pts
 			(xy 167.64 45.974) (xy 167.64 60.96)
 		)
 		(stroke
@@ -3032,6 +4485,16 @@
 			(type default)
 		)
 		(uuid "694c27ea-567d-4b2a-b6c6-1dd78e1430d0")
+	)
+	(wire
+		(pts
+			(xy 181.61 49.53) (xy 182.88 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae928dc-1bc1-4d03-adc4-13b4355f3f30")
 	)
 	(wire
 		(pts
@@ -3045,13 +4508,73 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 68.58) (xy 144.78 68.58)
+			(xy 156.21 80.01) (xy 157.48 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c001af0-e641-436d-8355-bab66fcc4d54")
+	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 93.98 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2de1dc-8808-47bc-acd4-220caa6dc2e3")
+	)
+	(wire
+		(pts
+			(xy 156.21 83.82) (xy 157.48 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6db7160b-25ac-4494-8832-5ddf82b66480")
+	)
+	(wire
+		(pts
+			(xy 93.98 68.58) (xy 105.41 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6edc336e-12f1-4016-b0bb-382aeed9dca0")
+	)
+	(wire
+		(pts
+			(xy 143.51 83.82) (xy 144.78 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f93220b-3cc9-49b2-a0a7-51237103c1a6")
+	)
+	(wire
+		(pts
+			(xy 132.08 68.58) (xy 143.51 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6fcf62cf-bd1f-49a8-928a-1750c8a90842")
+	)
+	(wire
+		(pts
+			(xy 130.81 106.68) (xy 132.08 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fd2a5f5-94eb-4422-98b6-3a89ae6bc4f1")
 	)
 	(wire
 		(pts
@@ -3065,16 +4588,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 57.15) (xy 170.18 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74eece83-0441-48b7-8eac-b4bd3581047f")
-	)
-	(wire
-		(pts
 			(xy 104.14 60.96) (xy 104.14 72.39)
 		)
 		(stroke
@@ -3085,7 +4598,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 91.44) (xy 170.18 91.44)
+			(xy 157.48 91.44) (xy 168.91 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3095,7 +4608,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 182.88 91.44)
+			(xy 170.18 91.44) (xy 181.61 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3112,6 +4625,26 @@
 			(type default)
 		)
 		(uuid "793e9f6c-5a50-47d3-85c2-d473df1d9f66")
+	)
+	(wire
+		(pts
+			(xy 194.31 95.25) (xy 195.58 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a8e3327-44a0-4493-b7e3-ba685df47aa1")
+	)
+	(wire
+		(pts
+			(xy 130.81 68.58) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2d5550-8260-4a2b-a235-6f542e94fb01")
 	)
 	(wire
 		(pts
@@ -3135,7 +4668,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 91.44) (xy 132.08 91.44)
+			(xy 119.38 91.44) (xy 130.81 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3145,13 +4678,53 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 80.01) (xy 106.68 80.01)
+			(xy 207.01 95.25) (xy 208.28 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80b9ebd7-8c57-4fe3-a467-5fcf11db12dc")
+		(uuid "7ef94194-c84e-44a2-91bc-e5725284c300")
+	)
+	(wire
+		(pts
+			(xy 181.61 57.15) (xy 182.88 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80664ea9-a420-4614-a1d0-1b599fa2be1f")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 119.38 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80af4e5a-a312-4d2d-91a6-cd32da740597")
+	)
+	(wire
+		(pts
+			(xy 232.41 95.25) (xy 233.68 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813bcad2-60d3-43de-8fa7-92a8a733affc")
+	)
+	(wire
+		(pts
+			(xy 194.31 68.58) (xy 195.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84d81b12-b91c-4ec1-8015-a28ed713be64")
 	)
 	(wire
 		(pts
@@ -3165,7 +4738,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 91.44) (xy 208.28 91.44)
+			(xy 195.58 91.44) (xy 207.01 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3185,13 +4758,33 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 91.44) (xy 106.68 91.44)
+			(xy 93.98 72.39) (xy 92.71 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "871af83b-2c6c-4c9a-b69e-7edd8be87c57")
+		(uuid "86c40918-6e0f-49b1-b328-22595bb01c4d")
+	)
+	(wire
+		(pts
+			(xy 181.61 83.82) (xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "879c417c-2b35-4584-a153-6c88a8525c6f")
+	)
+	(wire
+		(pts
+			(xy 219.71 72.39) (xy 220.98 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a6d231-3736-42f1-8e14-ca596d8cbef7")
 	)
 	(wire
 		(pts
@@ -3215,6 +4808,66 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 57.15) (xy 93.98 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e4af3b2-2fdb-4326-b89c-5328340c06da")
+	)
+	(wire
+		(pts
+			(xy 118.11 68.58) (xy 119.38 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e5c98d1-fe2a-4d3e-aba0-5ca6d56b9c61")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 119.38 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fbf141b-5aee-480f-9960-0c2d96a5824c")
+	)
+	(wire
+		(pts
+			(xy 143.51 95.25) (xy 144.78 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9160dbd2-ac47-4c96-8ea3-8c584ff017eb")
+	)
+	(wire
+		(pts
+			(xy 207.01 72.39) (xy 208.28 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9171b68e-7f7e-4687-8bd8-7e217c1365ba")
+	)
+	(wire
+		(pts
+			(xy 105.41 106.68) (xy 106.68 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92745072-fa5e-49e2-b200-6cb8823c148e")
+	)
+	(wire
+		(pts
 			(xy 218.44 45.974) (xy 218.44 60.96)
 		)
 		(stroke
@@ -3225,13 +4878,23 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 68.58) (xy 157.48 68.58)
+			(xy 144.78 68.58) (xy 156.21 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9305be60-8882-4f89-a5bd-b4010665b38a")
+	)
+	(wire
+		(pts
+			(xy 143.51 72.39) (xy 144.78 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93244aa3-27de-496a-9033-f63b84400409")
 	)
 	(wire
 		(pts
@@ -3255,13 +4918,33 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 93.98 91.44)
+			(xy 168.91 102.87) (xy 170.18 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97692a7d-805e-456f-a9ad-0094dbda74d6")
+		(uuid "98231410-3154-49a4-8753-fb7c38c53003")
+	)
+	(wire
+		(pts
+			(xy 181.61 68.58) (xy 182.88 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98371e08-8803-433e-a6ad-69cb1dd9df8b")
+	)
+	(wire
+		(pts
+			(xy 194.31 83.82) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "983c012a-289c-400d-95e0-5270aab40617")
 	)
 	(wire
 		(pts
@@ -3305,6 +4988,26 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 114.3) (xy 144.78 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb4a06e-6141-4202-8a03-445ead6cdb07")
+	)
+	(wire
+		(pts
+			(xy 168.91 60.96) (xy 170.18 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ce96e80-5ecd-44f4-959c-ad97de7543c8")
+	)
+	(wire
+		(pts
 			(xy 104.14 95.25) (xy 104.14 106.68)
 		)
 		(stroke
@@ -3315,7 +5018,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 102.87) (xy 233.68 102.87)
+			(xy 220.98 102.87) (xy 232.41 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3325,7 +5028,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 80.01) (xy 195.58 80.01)
+			(xy 182.88 80.01) (xy 194.31 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3355,7 +5058,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 91.44) (xy 119.38 91.44)
+			(xy 156.21 102.87) (xy 157.48 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a31b17c0-48b8-455a-a3c7-a4bdb593654a")
+	)
+	(wire
+		(pts
+			(xy 106.68 91.44) (xy 118.11 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3365,7 +5078,27 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 114.3) (xy 182.88 114.3)
+			(xy 168.91 114.3) (xy 170.18 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4368bc5-bf94-49ae-8ecf-a2279767ad7b")
+	)
+	(wire
+		(pts
+			(xy 219.71 60.96) (xy 220.98 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5acbb05-e0c6-444e-ba4d-0e3c54853e0b")
+	)
+	(wire
+		(pts
+			(xy 170.18 114.3) (xy 181.61 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3375,7 +5108,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 157.48 114.3)
+			(xy 144.78 114.3) (xy 156.21 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3385,7 +5118,17 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 102.87) (xy 157.48 102.87)
+			(xy 168.91 57.15) (xy 170.18 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6900c6b-f7a6-42d4-ac5d-18720e6c2276")
+	)
+	(wire
+		(pts
+			(xy 144.78 102.87) (xy 156.21 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3395,13 +5138,43 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 102.87) (xy 144.78 102.87)
+			(xy 143.51 68.58) (xy 144.78 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a954c91b-bd79-4a5b-947e-72523bda6544")
+	)
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 143.51 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a968143e-07e4-4079-89a7-f53a9471e6ff")
+	)
+	(wire
+		(pts
+			(xy 232.41 72.39) (xy 233.68 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa740ae3-3f98-4e06-b1bd-f66bd1bd0f44")
+	)
+	(wire
+		(pts
+			(xy 105.41 83.82) (xy 106.68 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaba23ce-cb72-4a5f-8bc7-79604d917e2f")
 	)
 	(wire
 		(pts
@@ -3415,6 +5188,26 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 95.25) (xy 93.98 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab7fed6e-fc35-4dc6-b1aa-89f50c656da6")
+	)
+	(wire
+		(pts
+			(xy 168.91 91.44) (xy 170.18 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac0eba14-66e0-45e3-9aea-c0d490ea74e7")
+	)
+	(wire
+		(pts
 			(xy 116.84 72.39) (xy 116.84 83.82)
 		)
 		(stroke
@@ -3422,6 +5215,26 @@
 			(type default)
 		)
 		(uuid "ac91878e-4121-4e5c-83a0-d4944c6dd996")
+	)
+	(wire
+		(pts
+			(xy 168.91 106.68) (xy 170.18 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad3fd4bc-ff8d-4f45-bd93-085da806cf87")
+	)
+	(wire
+		(pts
+			(xy 130.81 80.01) (xy 132.08 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aedf47ec-bdf8-429e-9176-9657757324a4")
 	)
 	(wire
 		(pts
@@ -3435,13 +5248,53 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 114.3) (xy 233.68 114.3)
+			(xy 220.98 114.3) (xy 232.41 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "af2ddff2-f454-450d-94ef-2ddba0aad7df")
+	)
+	(wire
+		(pts
+			(xy 181.61 95.25) (xy 182.88 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af70a3f3-cbbf-48da-a5c2-62e4377836dc")
+	)
+	(wire
+		(pts
+			(xy 219.71 102.87) (xy 220.98 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f9a293-c7f2-4621-a4d0-9ff926658b8e")
+	)
+	(wire
+		(pts
+			(xy 130.81 102.87) (xy 132.08 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29dd93f-3229-4dcd-a062-6ce26ad41d15")
+	)
+	(wire
+		(pts
+			(xy 168.91 72.39) (xy 170.18 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4724fe0-5f39-42c8-840e-0f11e6c8362e")
 	)
 	(wire
 		(pts
@@ -3475,7 +5328,47 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 119.38 68.58)
+			(xy 105.41 68.58) (xy 106.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba32ac2a-5b17-4347-bc7f-5c5ee2e5c611")
+	)
+	(wire
+		(pts
+			(xy 92.71 106.68) (xy 93.98 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba5050b0-6c7f-440e-8b1b-3b96d8174d39")
+	)
+	(wire
+		(pts
+			(xy 93.98 80.01) (xy 105.41 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bab8073d-cc57-4b72-97a9-45de4355a13a")
+	)
+	(wire
+		(pts
+			(xy 168.91 80.01) (xy 170.18 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad667dc-0794-44ab-8b15-10b60f48dbea")
+	)
+	(wire
+		(pts
+			(xy 106.68 68.58) (xy 118.11 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3485,13 +5378,33 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 80.01) (xy 93.98 80.01)
+			(xy 130.81 91.44) (xy 132.08 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be6bb3cf-a367-48a7-b2fa-4afd9236b572")
+		(uuid "bebbca6b-476d-4e01-a1a5-3454c5f7daa8")
+	)
+	(wire
+		(pts
+			(xy 93.98 57.15) (xy 168.91 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf37bf98-7f56-40ad-a968-47ae428463c2")
+	)
+	(wire
+		(pts
+			(xy 130.81 95.25) (xy 132.08 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfa50ceb-ce07-4d6e-9985-9b249522760f")
 	)
 	(wire
 		(pts
@@ -3505,7 +5418,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 114.3) (xy 119.38 114.3)
+			(xy 130.81 72.39) (xy 132.08 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2873309-2a02-4c7b-8b2e-c3c1fbaa8fd1")
+	)
+	(wire
+		(pts
+			(xy 106.68 114.3) (xy 118.11 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3515,13 +5438,33 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 102.87) (xy 220.98 102.87)
+			(xy 208.28 102.87) (xy 219.71 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c69b8cf6-3383-4ceb-b08b-a9d768a15902")
+	)
+	(wire
+		(pts
+			(xy 130.81 114.3) (xy 132.08 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c774e56e-6c5d-43d8-8163-f511a29e9acc")
+	)
+	(wire
+		(pts
+			(xy 118.11 60.96) (xy 119.38 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7754206-0c01-47bb-97f7-1f32477a20fd")
 	)
 	(wire
 		(pts
@@ -3555,7 +5498,17 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 80.01) (xy 233.68 80.01)
+			(xy 143.51 106.68) (xy 144.78 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdfd8568-4906-463e-860a-ac3ad166ee4a")
+	)
+	(wire
+		(pts
+			(xy 220.98 80.01) (xy 232.41 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3565,17 +5518,27 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 68.58) (xy 106.68 68.58)
+			(xy 118.11 106.68) (xy 119.38 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0df474c-29d9-4366-9de2-683f9eda76b2")
+		(uuid "ce9d7454-1b6a-4062-8017-dcac7160d325")
 	)
 	(wire
 		(pts
-			(xy 132.08 91.44) (xy 144.78 91.44)
+			(xy 207.01 83.82) (xy 208.28 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0639a30-73d7-4309-a435-652cea3a1cad")
+	)
+	(wire
+		(pts
+			(xy 132.08 91.44) (xy 143.51 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3605,6 +5568,36 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 102.87) (xy 233.68 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d28e1695-1b38-4acf-ab1c-9a8200ef16f2")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 106.68 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2aacbdd-ef42-4fa4-bf3d-52ae77352a58")
+	)
+	(wire
+		(pts
+			(xy 156.21 72.39) (xy 157.48 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d408ac96-0805-4c5a-b612-2d2a693c2e84")
+	)
+	(wire
+		(pts
 			(xy 167.64 72.39) (xy 167.64 83.82)
 		)
 		(stroke
@@ -3612,6 +5605,36 @@
 			(type default)
 		)
 		(uuid "d45ef8f7-9bf7-4d64-a38c-d67f3d1da945")
+	)
+	(wire
+		(pts
+			(xy 168.91 95.25) (xy 170.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4eddabe-3ca7-4781-b7d7-f5fe497a7859")
+	)
+	(wire
+		(pts
+			(xy 118.11 114.3) (xy 119.38 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5363c96-f4d5-4205-a667-4689c11c3050")
+	)
+	(wire
+		(pts
+			(xy 130.81 83.82) (xy 132.08 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9fb74a0-3e14-4ab8-b67e-80c4a078cbcc")
 	)
 	(wire
 		(pts
@@ -3625,7 +5648,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 91.44) (xy 233.68 91.44)
+			(xy 220.98 91.44) (xy 232.41 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3635,7 +5658,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 114.3) (xy 132.08 114.3)
+			(xy 219.71 95.25) (xy 220.98 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf1c1ef-de81-4ff5-9a3a-1e60472aa931")
+	)
+	(wire
+		(pts
+			(xy 119.38 114.3) (xy 130.81 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3655,17 +5688,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 57.15) (xy 93.98 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd2d712c-efe5-4b10-bbe5-811472e2fcd5")
-	)
-	(wire
-		(pts
-			(xy 182.88 114.3) (xy 195.58 114.3)
+			(xy 182.88 114.3) (xy 194.31 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3675,7 +5698,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 102.87) (xy 195.58 102.87)
+			(xy 156.21 114.3) (xy 157.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0f3b8ce-9ef8-408b-ba1c-cc4e03b75c4f")
+	)
+	(wire
+		(pts
+			(xy 207.01 106.68) (xy 208.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d2726a-b964-4ba7-9c5e-9144425a0222")
+	)
+	(wire
+		(pts
+			(xy 182.88 102.87) (xy 194.31 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3685,7 +5728,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 57.15) (xy 220.98 57.15)
+			(xy 195.58 57.15) (xy 219.71 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3705,7 +5748,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 91.44) (xy 157.48 91.44)
+			(xy 144.78 91.44) (xy 156.21 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3715,7 +5758,37 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 114.3) (xy 144.78 114.3)
+			(xy 207.01 114.3) (xy 208.28 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e89b5904-0017-4958-b78f-0b8a8cf2b6d7")
+	)
+	(wire
+		(pts
+			(xy 207.01 60.96) (xy 208.28 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea0073a7-d261-4a7f-ac18-535a9744d9a4")
+	)
+	(wire
+		(pts
+			(xy 181.61 80.01) (xy 182.88 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb5c5248-2abd-4161-ad0b-1b114f71f8d5")
+	)
+	(wire
+		(pts
+			(xy 132.08 114.3) (xy 143.51 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3725,7 +5798,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 68.58) (xy 170.18 68.58)
+			(xy 157.48 68.58) (xy 168.91 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3735,13 +5808,53 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 80.01) (xy 182.88 80.01)
+			(xy 232.41 114.3) (xy 233.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb9d62d-6289-4b8a-8477-ba1cde9ad69d")
+	)
+	(wire
+		(pts
+			(xy 170.18 80.01) (xy 181.61 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ed4f3552-8130-4df1-afae-30f987860834")
+	)
+	(wire
+		(pts
+			(xy 194.31 106.68) (xy 195.58 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ede04bc1-111a-4ca4-a32d-1155dd65a8dc")
+	)
+	(wire
+		(pts
+			(xy 181.61 114.3) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeaf3c0c-c226-43df-806b-ed157c8417d1")
+	)
+	(wire
+		(pts
+			(xy 232.41 68.58) (xy 233.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef2f853c-5c48-4da2-ab18-70dab1b3644c")
 	)
 	(wire
 		(pts
@@ -3755,7 +5868,17 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 68.58) (xy 208.28 68.58)
+			(xy 232.41 60.96) (xy 233.68 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef42a7c9-9520-41f2-9ad0-9182aa78050c")
+	)
+	(wire
+		(pts
+			(xy 195.58 68.58) (xy 207.01 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3775,13 +5898,43 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 80.01) (xy 119.38 80.01)
+			(xy 156.21 60.96) (xy 157.48 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f28fb5f1-5caa-4e73-b1d4-b66068c07a60")
+	)
+	(wire
+		(pts
+			(xy 106.68 80.01) (xy 118.11 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f29d8361-02aa-4daf-95b2-e98edfd23f61")
+	)
+	(wire
+		(pts
+			(xy 194.31 57.15) (xy 195.58 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f52d7df4-6c85-41e1-9acb-32cece698a6e")
+	)
+	(wire
+		(pts
+			(xy 219.71 91.44) (xy 220.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f607ef0b-1e87-42fb-a194-26acd7250c93")
 	)
 	(wire
 		(pts
@@ -3795,7 +5948,17 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 91.44) (xy 195.58 91.44)
+			(xy 232.41 91.44) (xy 233.68 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f776f350-0353-4bc4-a619-fc5b58398047")
+	)
+	(wire
+		(pts
+			(xy 182.88 91.44) (xy 194.31 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3812,6 +5975,16 @@
 			(type default)
 		)
 		(uuid "f8eebf2e-5f89-4a18-8360-9ec95d104f5e")
+	)
+	(wire
+		(pts
+			(xy 118.11 91.44) (xy 119.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbecebf8-7264-4e0c-b4be-d2612a155b1c")
 	)
 	(wire
 		(pts
@@ -3835,7 +6008,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 80.01) (xy 220.98 80.01)
+			(xy 208.28 80.01) (xy 219.71 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3852,6 +6025,16 @@
 			(type default)
 		)
 		(uuid "fe847ae9-e521-4759-abc8-f5146276fa79")
+	)
+	(wire
+		(pts
+			(xy 105.41 102.87) (xy 106.68 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed05b10-e7f0-4ca4-ae9e-f69a005b1587")
 	)
 	(global_label "ROW3"
 		(shape input)
@@ -4669,7 +6852,7 @@
 	)
 	(global_label "ROW0"
 		(shape input)
-		(at 92.71 57.15 180)
+		(at 93.98 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4679,7 +6862,7 @@
 		)
 		(uuid "b2be19f8-0dca-41da-bc69-98eda7b42cbf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.9148 57.0706 0)
+			(at 85.1848 57.0706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,6 +7379,358 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 130.81 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "062f0659-94c9-4d7a-bd43-43eb52ea0857")
+		(property "Reference" "D117"
+			(at 133.35 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 133.35 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.255 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d88f0ad1-c0fc-4018-9a2b-f391cc3ccf47")
+		)
+		(pin "2"
+			(uuid "5fa8cdfd-c75f-4194-812d-0a30593e923c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 156.21 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "068a1a7d-a5cd-4150-9449-ee99e349100f")
+		(property "Reference" "D128"
+			(at 158.75 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 158.75 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.655 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 156.21 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 156.21 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 156.21 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e000103c-99d2-436d-9b59-4597ea15274f")
+		)
+		(pin "2"
+			(uuid "1a1c42ea-1680-4f6f-8410-57b0422ce4e4")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06c5045f-0659-4121-82af-e215de0fd1b2")
+		(property "Reference" "D141"
+			(at 184.15 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b575ad6-6103-4ea1-acb3-163b6c65dd6c")
+		)
+		(pin "2"
+			(uuid "2ae7d822-d804-4e63-8ba1-69a855cb77c2")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D141")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 207.01 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06f3fbb9-a2c0-4caf-a3c8-0751ce06b4b9")
+		(property "Reference" "D152"
+			(at 209.55 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 209.55 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 211.455 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1005619-3c13-45e9-85f6-1504508f0391")
+		)
+		(pin "2"
+			(uuid "7ab40ebf-3b31-44de-9ddc-a063088c7912")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 208.28 76.2 90)
 		(unit 1)
@@ -5527,6 +8062,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 143.51 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11f3fed8-5080-47c1-ad2d-8ef6052c6c97")
+		(property "Reference" "D123"
+			(at 146.05 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 146.05 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 147.955 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa26147d-8cf0-4b61-8e8e-5c5be8d43f37")
+		)
+		(pin "2"
+			(uuid "53af74d8-5c3a-459f-bdb1-73eff3bb7a40")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 149.86 83.82 0)
 		(unit 1)
@@ -5588,6 +8211,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 105.41 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12f150b9-eae7-47d4-b1a0-67c840ae10f4")
+		(property "Reference" "D111"
+			(at 107.95 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 107.95 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 109.855 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60241903-3b73-46cd-87f9-d674a665a0e4")
+		)
+		(pin "2"
+			(uuid "de92a135-8ca6-4ad8-8e59-4e8d37d55579")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D111")
 					(unit 1)
 				)
 			)
@@ -6258,6 +8969,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e61b0ab-80f3-4e36-aae2-6745243c2a12")
+		(property "Reference" "D133"
+			(at 171.45 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a36d55e-cb45-4d86-a111-cf67cab9c1c1")
+		)
+		(pin "2"
+			(uuid "e004104d-11f1-4ffa-bb90-f9751e85e230")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 99.06 95.25 0)
 		(unit 1)
@@ -6319,6 +9118,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 156.21 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "205218de-2768-418d-84a3-bff698b5488d")
+		(property "Reference" "D131"
+			(at 158.75 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 158.75 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.655 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 156.21 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 156.21 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 156.21 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7c0a3cd-10ea-4da1-a5a4-d8af23dab6c7")
+		)
+		(pin "2"
+			(uuid "ee81a6a5-bb73-4dd2-97af-ea3ecbf68ccc")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D131")
 					(unit 1)
 				)
 			)
@@ -6407,6 +9294,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23d7a422-fbe4-4292-ac38-2960b6fcb7ef")
+		(property "Reference" "D149"
+			(at 196.85 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14c3e402-2257-4771-8eb6-e6aa499a308a")
+		)
+		(pin "2"
+			(uuid "f4548c3d-68d8-47e9-8e5b-8f6fb8b44a5d")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D149")
 					(unit 1)
 				)
 			)
@@ -6811,6 +9786,182 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 143.51 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26874320-5655-4c13-8961-bbe066bd196b")
+		(property "Reference" "D122"
+			(at 146.05 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 146.05 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 147.955 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91b1d025-2bb4-40b0-8b2b-398c0668c89d")
+		)
+		(pin "2"
+			(uuid "1480520a-9c12-4cc2-9314-20fde6ac854a")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 207.01 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29692101-3845-478f-9802-929c6361db6a")
+		(property "Reference" "D154"
+			(at 209.55 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 209.55 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 211.455 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 207.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 207.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 207.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecc2e1b3-8b08-4b56-95c3-45e1c5c3c9af")
+		)
+		(pin "2"
+			(uuid "d75cb9a3-63da-4290-b6f9-1224fb31ed0a")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 226.06 72.39 0)
 		(unit 1)
@@ -6872,6 +10023,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cd04f9f-8a09-4d93-a28f-151ed334e112")
+		(property "Reference" "D159"
+			(at 222.25 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d29a59d3-6550-44d1-8dcc-d53b42afe55d")
+		)
+		(pin "2"
+			(uuid "232cc875-d84a-4c49-ab64-b73d986c4c29")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D159")
 					(unit 1)
 				)
 			)
@@ -7167,6 +10406,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "33f8d8b3-e48f-4a44-a161-35a10a6ec1fc")
+		(property "Reference" "D132"
+			(at 171.45 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "923e85c9-cd71-47c3-b27b-530ddc71c73e")
+		)
+		(pin "2"
+			(uuid "03c98d46-6b38-4247-a55e-ca689b6268cb")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 226.06 60.96 0)
 		(unit 1)
@@ -7234,6 +10561,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 118.11 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34e9458a-eefa-4820-9ed6-db95c0e7ff91")
+		(property "Reference" "D113"
+			(at 120.65 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 120.65 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 122.555 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca768b6c-5603-48ed-a728-6ef879ea4be4")
+		)
+		(pin "2"
+			(uuid "43c336f6-6296-487f-87e2-f0b0206a798c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 54.61 173.99 0)
 		(unit 1)
@@ -7286,6 +10701,15 @@
 				(hide yes)
 			)
 		)
+		(property "note" "try to find part number 8212200210001101  millmax spring loaded pins"
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "232f72ec-1c91-48f3-842a-4178cc3a8f33")
 		)
@@ -7296,6 +10720,94 @@
 			(project "order66"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 143.51 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3681e917-cccb-49df-949e-13ab0ecdf95a")
+		(property "Reference" "D124"
+			(at 146.05 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 146.05 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 147.955 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 143.51 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 143.51 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 143.51 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "169dc0b3-78e0-4f8d-971d-73e42ff7f1f6")
+		)
+		(pin "2"
+			(uuid "8140ba34-ba53-4e7b-88ab-ef0317268dea")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D124")
 					(unit 1)
 				)
 			)
@@ -7521,6 +11033,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "393eed69-59b7-4cbe-b619-8c3191d5cd0a")
+		(property "Reference" "D101"
+			(at 95.25 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fe101d2-817f-4ad2-ac28-3db8092dfaca")
+		)
+		(pin "2"
+			(uuid "ac9ad792-70b8-4511-a778-261cbbce7d7e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "1043:1043P")
 		(at 81.28 154.94 270)
 		(unit 1)
@@ -7722,6 +11322,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3fa75cf8-0a01-414a-8c41-dffd5e49c48b")
+		(property "Reference" "D138"
+			(at 184.15 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b74fd59c-f167-478e-a208-9b44907d24a4")
+		)
+		(pin "2"
+			(uuid "8f7f084a-7b45-4546-86e1-96667d5320aa")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 226.06 83.82 0)
 		(unit 1)
@@ -7783,6 +11471,358 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 143.51 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40bbd8bb-e768-4733-8595-be765c89a2bd")
+		(property "Reference" "D125"
+			(at 146.05 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 146.05 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 147.955 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 143.51 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 143.51 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 143.51 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c90a7d88-4e87-4f29-be58-66246beb9725")
+		)
+		(pin "2"
+			(uuid "467c634d-8d50-4296-8710-d0d2ef366b32")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "416db0c1-ab06-49b1-b905-e6f99668162c")
+		(property "Reference" "D137"
+			(at 171.45 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebdeb240-cfc7-4ab9-82fa-ba707fd61427")
+		)
+		(pin "2"
+			(uuid "8ee6e776-c9ff-4616-b1e9-f43f647e430c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43938f11-7c28-4ee2-8542-305cfc63be44")
+		(property "Reference" "D140"
+			(at 184.15 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19e3ce2c-250e-4331-a1e9-c9a4c43f32a7")
+		)
+		(pin "2"
+			(uuid "faf8304f-b132-4c12-9c25-329fccdd00de")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 130.81 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4426e662-146e-48c1-8ca8-449f7ad42900")
+		(property "Reference" "D120"
+			(at 133.35 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 133.35 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.255 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 130.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 130.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 130.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8515f299-39a9-424a-be86-4849e62cb360")
+		)
+		(pin "2"
+			(uuid "cc040afc-46a7-4d16-90be-07253ddc289c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D120")
 					(unit 1)
 				)
 			)
@@ -8251,6 +12291,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4743889a-5d79-40d1-b655-6be89af4549a")
+		(property "Reference" "D136"
+			(at 171.45 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4699a118-dbe7-49ff-9223-205cd99e9171")
+		)
+		(pin "2"
+			(uuid "caae0a88-b001-4036-b30d-18b03b90f61f")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D136")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 182.88 87.63 90)
 		(unit 1)
@@ -8333,6 +12461,182 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 143.51 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "49a40633-100b-4c84-a254-995c1bebb945")
+		(property "Reference" "D126"
+			(at 146.05 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 146.05 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 147.955 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 143.51 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 143.51 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 143.51 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98a6f1e3-7abe-4f13-ba7b-3bc2fc849b75")
+		)
+		(pin "2"
+			(uuid "5b34d3f0-24f8-4d0f-a4dc-9e8e4d2b2b66")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bca75ea-96ba-4895-97fd-88e1ca45bf92")
+		(property "Reference" "D163"
+			(at 234.95 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a688aa77-f514-4d14-8ea6-5007ff523a41")
+		)
+		(pin "2"
+			(uuid "542a1aad-cded-4dc4-ac86-729bae59b79f")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D163")
 					(unit 1)
 				)
 			)
@@ -8939,6 +13243,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58aef551-5387-4f81-9e92-5cefbaaf51a1")
+		(property "Reference" "D134"
+			(at 171.45 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e91ed67-b525-45d9-ad9c-2eef18baa7b2")
+		)
+		(pin "2"
+			(uuid "98689349-8fe0-4056-a454-4aaecea06a0e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 99.06 83.82 0)
 		(unit 1)
@@ -9094,6 +13486,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b346190-f4ff-4629-b8a0-888a396791a7")
+		(property "Reference" "D148"
+			(at 196.85 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "947be280-e4bd-4a17-a6a5-ac595da3d1ce")
+		)
+		(pin "2"
+			(uuid "a2b69fe2-0c4c-43de-9cd4-8bf1ef8ac4db")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 137.16 83.82 0)
 		(unit 1)
@@ -9155,6 +13635,358 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 118.11 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c67be52-aa88-443f-bf11-4381edf23276")
+		(property "Reference" "D116"
+			(at 120.65 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 120.65 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 122.555 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 118.11 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 118.11 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aaa3a2c-5583-4276-b8dc-ac14e31d6681")
+		)
+		(pin "2"
+			(uuid "26d375c2-2d3b-4407-934f-df94c9dff708")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 130.81 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c701d9d-5179-42c9-8545-42f1d72c5ab9")
+		(property "Reference" "D121"
+			(at 133.35 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 133.35 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.255 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89d63e80-5e98-4db4-984e-cf9505af2782")
+		)
+		(pin "2"
+			(uuid "a2f57035-3c4a-45e1-9262-9559cbf38156")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 130.81 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d51ef7b-db08-4cea-8b80-c4aeab91e94c")
+		(property "Reference" "D118"
+			(at 133.35 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 133.35 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.255 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4947fdc5-e665-48ba-b75c-8ce6557899a3")
+		)
+		(pin "2"
+			(uuid "e98f0095-e361-4ee9-9eb5-cccf4ab64b8c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e0a51a8-08cd-442a-8361-a6ba0452c72a")
+		(property "Reference" "D166"
+			(at 234.95 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb289538-21e1-4c2d-b5ad-227751e4b0a7")
+		)
+		(pin "2"
+			(uuid "47a630b6-26fb-4cfc-9d7f-9d406ee1f360")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D166")
 					(unit 1)
 				)
 			)
@@ -9535,6 +14367,182 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a0ddfdc-f2d1-4fd8-a4f2-3cb88650c119")
+		(property "Reference" "D162"
+			(at 234.95 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7067c989-6a71-40cf-a2b8-fb353918b8dd")
+		)
+		(pin "2"
+			(uuid "3d20ab33-de0a-47c5-b24b-0848e7203e5c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 118.11 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c3b4aac-1b1e-4681-bb63-dd5a45412a52")
+		(property "Reference" "D115"
+			(at 120.65 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 120.65 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 122.555 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 118.11 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 118.11 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "308074df-8f03-4e73-b679-1fe4f0fc9b66")
+		)
+		(pin "2"
+			(uuid "42d4d00a-ee9d-4c90-a618-a86edaee400e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 175.26 106.68 0)
 		(unit 1)
@@ -9839,6 +14847,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6dfeeb76-ffcf-4726-bd70-ef0c58b9a72f")
+		(property "Reference" "D143"
+			(at 184.15 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf35b8ec-d778-4260-9d8f-27493b60a380")
+		)
+		(pin "2"
+			(uuid "79d5f9ef-5802-4a99-a7a3-eb40e6bde449")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D143")
 					(unit 1)
 				)
 			)
@@ -10268,6 +15364,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74609bd5-2d18-4347-be49-ce05497887ba")
+		(property "Reference" "D139"
+			(at 184.15 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4bc363b-6e49-4655-9d58-a0f536d689c9")
+		)
+		(pin "2"
+			(uuid "7692ebc9-0b02-4f2f-8c26-d783a908f5de")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 187.96 49.53 0)
 		(unit 1)
@@ -10651,6 +15835,270 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 105.41 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78d6ff7b-c4dc-445f-896c-0922536db7dc")
+		(property "Reference" "D108"
+			(at 107.95 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 107.95 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 109.855 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa0c20a0-8c8d-488e-b5c1-1647b72c738e")
+		)
+		(pin "2"
+			(uuid "a90f203d-0972-4391-9abb-813e0681a9f6")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 105.41 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79ef8d3f-8962-4cae-9e8c-1fd7a634b16c")
+		(property "Reference" "D110"
+			(at 107.95 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 107.95 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 109.855 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 105.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 105.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c2c9d86-6939-4eb1-a835-4946114191bb")
+		)
+		(pin "2"
+			(uuid "9d86788b-0588-4868-95f6-ea0a2bcc1721")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a3c4bc5-9b5c-4908-ac27-f4006f68ea6f")
+		(property "Reference" "D156"
+			(at 222.25 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b764e87-f290-4d1a-921f-07aa94cb0579")
+		)
+		(pin "2"
+			(uuid "cd39ca06-d8a2-4607-babd-1a2656ad529c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 208.28 87.63 90)
 		(unit 1)
@@ -10915,6 +16363,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 105.41 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d15777c-f360-484d-b764-a80ad2d02390")
+		(property "Reference" "D109"
+			(at 107.95 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 107.95 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 109.855 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 105.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 105.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b06bc6a2-4ea1-4298-a455-634b5071b224")
+		)
+		(pin "2"
+			(uuid "e9a8da5a-5234-4a60-a0f2-de7bc4a564d6")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 175.26 72.39 0)
 		(unit 1)
@@ -11049,6 +16585,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 181.61 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8055127d-e42b-4057-a5c6-4b42f9dfdd2a")
+		(property "Reference" "D142"
+			(at 184.15 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 184.15 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 186.055 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 181.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 181.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 181.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6015123-51a2-4fea-aa63-c059e273d2fe")
+		)
+		(pin "2"
+			(uuid "2c4bba1b-f70c-4da0-8e06-fa34609c092e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D142")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 157.48 110.49 90)
 		(unit 1)
@@ -11137,6 +16761,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8383e10b-6d26-4e51-a3ff-dc61ba0120eb")
+		(property "Reference" "D164"
+			(at 234.95 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00e7b8ff-52b4-41ba-a392-54f2f7d3a901")
+		)
+		(pin "2"
+			(uuid "677bdcbb-ec1b-4f27-91b8-02fe22f4b129")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D164")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 208.28 64.77 90)
 		(unit 1)
@@ -11219,6 +16931,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 130.81 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b760687-41f6-4307-af05-f77d6565a382")
+		(property "Reference" "D119"
+			(at 133.35 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 133.35 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.255 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5792f9ce-d2e2-487b-bbb0-61d5a3ced2e0")
+		)
+		(pin "2"
+			(uuid "b15e1d9b-d40d-4b78-920c-85085b226ab9")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D119")
 					(unit 1)
 				)
 			)
@@ -12156,6 +17956,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 168.91 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b2cadd1-9a2e-4b47-86d8-76774b0aab08")
+		(property "Reference" "D135"
+			(at 171.45 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 171.45 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 173.355 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00d8a539-3a09-400a-8404-89472e866bb7")
+		)
+		(pin "2"
+			(uuid "d9ecbb73-8ee0-4da4-8fe0-b3688f2c6e8e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 208.28 99.06 90)
 		(unit 1)
@@ -12238,6 +18126,182 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d05bc53-9158-46ad-ab45-a9ad592416a0")
+		(property "Reference" "D144"
+			(at 196.85 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "171c1f28-82da-4d2f-a17f-cbb5a60e6380")
+		)
+		(pin "2"
+			(uuid "ef3eaedf-e872-48bc-9e4a-49c8c9933db0")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0927b66-7de7-4eb4-bf40-228b8613e380")
+		(property "Reference" "D160"
+			(at 222.25 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67ee93e7-010e-4b20-8b9e-a5ad5338965d")
+		)
+		(pin "2"
+			(uuid "d7608ea8-63f3-4f57-92b6-9aaee35a91c6")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D160")
 					(unit 1)
 				)
 			)
@@ -12399,6 +18463,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a58088ee-ba40-487b-8049-293538368f04")
+		(property "Reference" "D104"
+			(at 95.25 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13cd1528-abfd-4ef0-81eb-ff26b98a55c1")
+		)
+		(pin "2"
+			(uuid "8783750b-bb1a-4e2e-bd2e-fe137dd2a996")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 132.08 110.49 90)
 		(unit 1)
@@ -12487,6 +18639,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 156.21 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a93d213a-47be-4b1f-8ea6-9ad5492ada9a")
+		(property "Reference" "D127"
+			(at 158.75 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 158.75 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.655 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 156.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 156.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 156.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fca0e81e-64f7-445d-b503-13efc54c6bd3")
+		)
+		(pin "2"
+			(uuid "c7d9e364-5ba8-48ef-bc64-6c6e5c572517")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 113.03 138.43 0)
 		(unit 1)
@@ -12545,6 +18785,182 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa8378ff-c786-430f-82c8-69271d988f19")
+		(property "Reference" "D145"
+			(at 196.85 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "757a3047-6c32-4985-88f6-a8d06e434e09")
+		)
+		(pin "2"
+			(uuid "698c92dd-191e-47e2-90d5-893bc7707c90")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adc98ed1-9a8a-41dd-9dd0-2f9ba08266f3")
+		(property "Reference" "D105"
+			(at 95.25 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36b10b90-af49-48ff-994f-5bd16819e9ee")
+		)
+		(pin "2"
+			(uuid "f158aa70-9f41-4dab-9f24-64f94fdba547")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D105")
 					(unit 1)
 				)
 			)
@@ -12612,6 +19028,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af5be55d-8a6b-41db-8550-6b6c8bad0b8e")
+		(property "Reference" "D103"
+			(at 95.25 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69cdd2ca-3c32-43ec-89fa-394590a3c2f1")
+		)
+		(pin "2"
+			(uuid "52499975-23a6-4220-8bda-ba967d204432")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -12700,6 +19204,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b13cd241-3806-4bd4-b68b-909e0762a02d")
+		(property "Reference" "D157"
+			(at 222.25 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e46798cd-a18e-4161-a8ed-4b0f7ea1495c")
+		)
+		(pin "2"
+			(uuid "7eb6be5c-08a5-45ad-b638-4b2be78179e5")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D157")
 					(unit 1)
 				)
 			)
@@ -13259,6 +19851,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 156.21 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdb537bd-a9c9-4e4b-a0e8-de92420fd881")
+		(property "Reference" "D129"
+			(at 158.75 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 158.75 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.655 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8653a3ff-afd9-4986-be2c-93b9d7cb5585")
+		)
+		(pin "2"
+			(uuid "e6b72502-21de-4367-8107-cab592c4da6a")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 93.98 64.77 90)
 		(unit 1)
@@ -13341,6 +20021,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfec07b1-493e-4bc5-8b1f-21823fd67fb7")
+		(property "Reference" "D146"
+			(at 196.85 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd3c37be-2ffc-437d-b8da-4b19b519b4ae")
+		)
+		(pin "2"
+			(uuid "8d686871-f2a8-4afb-a568-44d62ecadf92")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D146")
 					(unit 1)
 				)
 			)
@@ -13563,6 +20331,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 207.01 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3c770b8-d415-45fd-a323-2266276241c8")
+		(property "Reference" "D150"
+			(at 209.55 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 209.55 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 211.455 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 207.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 207.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 207.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e669cfd-bcd4-485c-bd76-ec0e3ad89243")
+		)
+		(pin "2"
+			(uuid "44fa329a-3351-4ad1-864d-1a6deb251a3c")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D150")
 					(unit 1)
 				)
 			)
@@ -13833,6 +20689,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb2dd66e-a22a-4c10-8ef9-2421a35c89d4")
+		(property "Reference" "D165"
+			(at 234.95 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "045cae6d-1b45-411d-aa56-a8c0d6ae2982")
+		)
+		(pin "2"
+			(uuid "6b8d3510-70bd-4c24-957c-fde2d752cc8b")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 238.76 83.82 0)
 		(unit 1)
@@ -13982,6 +20926,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d25620ff-07b8-42c5-a6d6-7af96284b8cd")
+		(property "Reference" "D102"
+			(at 95.25 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8549bdcd-5e95-4a78-849a-84c7149485b6")
+		)
+		(pin "2"
+			(uuid "96a6ffd6-b822-459c-9d21-e1af9ba1a01b")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -14143,6 +21175,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d5852c78-e850-433c-af6c-bf842b9f4ed4")
+		(property "Reference" "D155"
+			(at 222.25 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d26a2a0-18e6-4d37-a9ff-fff7849f1bc7")
+		)
+		(pin "2"
+			(uuid "a649fb2a-dff4-4008-b39d-a2ed4aee64dd")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 162.56 83.82 0)
 		(unit 1)
@@ -14210,6 +21330,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 232.41 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d89bebbf-1466-4f08-9721-deedfbcc0a8f")
+		(property "Reference" "D161"
+			(at 234.95 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 234.95 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 236.855 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 232.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 232.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 232.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 232.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b74b7b0-454d-4b28-ab34-b833f366c987")
+		)
+		(pin "2"
+			(uuid "d574ef9b-6998-4b10-8971-2e12e385ed4a")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 238.76 72.39 0)
 		(unit 1)
@@ -14271,6 +21479,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 219.71 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "db536f77-4ae4-4d4a-a4c6-e663b5e974c3")
+		(property "Reference" "D158"
+			(at 222.25 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 222.25 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 224.155 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 219.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 219.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 219.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 219.71 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe9f2f94-afd0-49b6-b62b-275e6f026ccf")
+		)
+		(pin "2"
+			(uuid "1679c709-45e6-4a34-b346-db8271b44feb")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D158")
 					(unit 1)
 				)
 			)
@@ -14881,6 +22177,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 92.71 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e00ce5f9-a21d-4f32-b7c0-901669bbf5ad")
+		(property "Reference" "D106"
+			(at 95.25 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 95.25 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 97.155 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "235ab0c3-3085-4274-ba14-5d52ba8561db")
+		)
+		(pin "2"
+			(uuid "e450f5e0-e471-4af8-963c-82dfc5c9d037")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 106.68 64.77 90)
 		(unit 1)
@@ -14963,6 +22347,182 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 118.11 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e16a5dcc-4539-4821-a967-8112f5bbee61")
+		(property "Reference" "D112"
+			(at 120.65 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 120.65 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 122.555 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2382eb9c-6dbf-4dcb-a030-c94f845ec10a")
+		)
+		(pin "2"
+			(uuid "62eda8d9-4879-49b8-8487-a7522241ef44")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 194.31 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e353cbfe-6934-418c-be0f-1b92d7791c34")
+		(property "Reference" "D147"
+			(at 196.85 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 196.85 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 198.755 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c68cff4-dbf2-4412-bf29-9fd065b6b674")
+		)
+		(pin "2"
+			(uuid "4747a3bd-3fd3-4e86-a9d2-df75d5454923")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D147")
 					(unit 1)
 				)
 			)
@@ -15185,6 +22745,182 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 156.21 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7ade527-a4c8-488f-8812-6d577c2dcbb7")
+		(property "Reference" "D130"
+			(at 158.75 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 158.75 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 160.655 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 156.21 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 156.21 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 156.21 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 156.21 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1a1a7c5-ffaa-49a3-a0c6-dd93a816f30d")
+		)
+		(pin "2"
+			(uuid "0c857eb8-816e-4991-8594-45a768374c89")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 118.11 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9e0b50f-51a1-4324-802c-be946bf28afc")
+		(property "Reference" "D114"
+			(at 120.65 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 120.65 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 122.555 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 118.11 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 118.11 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "297beaba-bed6-4e5a-a58d-852ed1c4ced4")
+		)
+		(pin "2"
+			(uuid "8afdb54a-3139-46c3-b3d8-6bc58312ad13")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D114")
 					(unit 1)
 				)
 			)
@@ -15693,6 +23429,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 105.41 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1d01fe6-b390-4873-bd83-75eb084e59ad")
+		(property "Reference" "D107"
+			(at 107.95 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 107.95 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 109.855 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e977e56c-cee8-487c-a55d-e1afe0ac0a5f")
+		)
+		(pin "2"
+			(uuid "f8e3768c-7179-452c-ac56-2ea39d4efe5f")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 149.86 95.25 0)
 		(unit 1)
@@ -16179,6 +24003,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 207.01 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6eca110-ba56-4418-8135-6f647518702b")
+		(property "Reference" "D151"
+			(at 209.55 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 209.55 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 211.455 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 207.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 207.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 207.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1244984f-995a-4ad4-a67a-8b4d09434d82")
+		)
+		(pin "2"
+			(uuid "69bb34e4-028e-4e3d-9377-57a05c441f38")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 144.78 64.77 90)
 		(unit 1)
@@ -16571,6 +24483,94 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 207.01 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd2c754d-9583-46b9-9722-5b621de5c831")
+		(property "Reference" "D153"
+			(at 209.55 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 209.55 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 211.455 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 207.01 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 207.01 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 207.01 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "771ca94c-8ebb-42d7-bea6-4bcd25d81ef0")
+		)
+		(pin "2"
+			(uuid "e4cf06c9-d938-4bf6-a8b2-60e2dea54c31")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "D153")
 					(unit 1)
 				)
 			)
