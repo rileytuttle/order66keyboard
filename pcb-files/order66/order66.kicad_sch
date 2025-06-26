@@ -4029,6 +4029,28 @@
 			)
 		)
 	)
+	(global_label "SWC"
+		(shape input)
+		(at 59.69 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c2b2139-618c-4bc8-9a84-5fce3d19f420")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.6061 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RST"
 		(shape input)
 		(at 29.21 111.76 180)
@@ -4196,6 +4218,28 @@
 		(uuid "5d6ae453-b5a6-4588-8862-f59b167abb02")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.6366 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SWC"
+		(shape input)
+		(at 39.37 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "60746441-90dd-4720-957c-b2c2ed7751a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.2861 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,6 +4689,28 @@
 			)
 		)
 	)
+	(global_label "SWD"
+		(shape input)
+		(at 59.69 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b33e9964-731e-4b3b-80c6-fd49885f0cc5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.6061 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RST"
 		(shape input)
 		(at 72.39 64.77 0)
@@ -5076,6 +5142,28 @@
 		(uuid "f4233856-3bdc-48db-9607-272c1dc3ee13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 129.4606 37.6022 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SWD"
+		(shape input)
+		(at 39.37 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f717d531-5060-4d4a-bbd2-45939ed274a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.2861 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5807,6 +5895,74 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 34.29 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a3c1054-4b60-439a-be23-14c303d49425")
+		(property "Reference" "J3"
+			(at 34.925 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "swd connector"
+			(at 34.925 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbf4def4-366e-4078-b9aa-cf7fd2577311")
+		)
+		(pin "2"
+			(uuid "d9867e0b-e582-403f-afab-e8c3f339869d")
+		)
+		(instances
+			(project ""
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7072,6 +7228,74 @@
 			(project "krtkus"
 				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
 					(reference "SW56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 54.61 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3601c7d1-71ba-4fc5-974d-9cb7d1100f1a")
+		(property "Reference" "J6"
+			(at 55.245 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "millmax connector"
+			(at 55.245 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "232f72ec-1c91-48f3-842a-4178cc3a8f33")
+		)
+		(pin "2"
+			(uuid "4fb5f516-2dd5-4dda-a0c8-f4366c40641e")
+		)
+		(instances
+			(project "order66"
+				(path "/4342f055-467b-4789-a8ed-b19f1b214d4d"
+					(reference "J6")
 					(unit 1)
 				)
 			)

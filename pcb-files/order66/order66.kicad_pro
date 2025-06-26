@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0922,
-          "height": 1.7526,
-          "width": 1.7526
+          "drill": 0.75,
+          "height": 1.2,
+          "width": 1.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -72,6 +72,10 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|169056200|83315000|671d10ee-cc99-4e79-8511-928469cad533|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|204062500|109600000|2462a8ff-1959-48df-b141-1d042d5c52d1|00000000-0000-0000-0000-000000000000",
           "increased pad diam for socket head"
         ],
@@ -81,6 +85,10 @@
         ],
         [
           "lib_footprint_mismatch|227762500|78500000|1a7407f4-b387-46d1-824f-8d40819ec86e|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|272762500|83500000|1bc26727-7582-4986-bca3-7971e64afe33|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -645,7 +653,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "/home/rileytuttle/order66keyboard/order66/order66-bom.csv",
+    "bom_export_filename": "order66-bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

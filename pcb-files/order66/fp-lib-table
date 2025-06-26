@@ -5,5 +5,5 @@
   (lib (name "mounthole")(type "KiCad")(uri "${KIPRJMOD}/../libraries/mounthole.pretty")(options "")(descr ""))
   (lib (name "nice-nano-kicad")(type "KiCad")(uri "${KIPRJMOD}/../libraries/nice-nano-kicad")(options "")(descr ""))
   (lib (name "MX_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/../libraries/MX_V2/MX_Hotswap.pretty")(options "")(descr ""))
-  (lib (name "B3F_1000")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/libraries/B3F_1000")(options "")(descr ""))
+  (lib (name "B3F_1000")(type "KiCad")(uri "${KIPRJMOD}/../libraries/B3F_1000")(options "")(descr ""))
 )
