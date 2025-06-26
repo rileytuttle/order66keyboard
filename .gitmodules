@@ -1,0 +1,3 @@
+[submodule "case-files/openscad-library-manager"]
+	path = case-files/openscad-library-manager
+	url = git@github.com:rileytuttle/openscad-library-manager.git
