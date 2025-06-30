@@ -5,4 +5,5 @@
   (lib (name "2025-06-18_12-05-45")(type "KiCad")(uri "${KIPRJMOD}/../libraries/EG1206A/KiCADv6/2025-06-18_12-05-45.kicad_sym")(options "")(descr ""))
   (lib (name "nice_nano")(type "Legacy")(uri "${KIPRJMOD}/../libraries/nice-nano-kicad/nice_nano.lib")(options "")(descr ""))
   (lib (name "SSSS811101")(type "KiCad")(uri "${KIPRJMOD}/../libraries/SSSS811101/SSSS811101.kicad_sym")(options "")(descr ""))
+  (lib (name "2025-06-30_18-11-54")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/pcb-files/libraries/3220_10_0100_00/KiCADv6/2025-06-30_18-11-54.kicad_sym")(options "")(descr ""))
 )

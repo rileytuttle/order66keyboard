@@ -7,4 +7,5 @@
   (lib (name "MX_Hotswap")(type "KiCad")(uri "${KIPRJMOD}/../libraries/MX_V2/MX_Hotswap.pretty")(options "")(descr ""))
   (lib (name "B3F_1000")(type "KiCad")(uri "${KIPRJMOD}/../libraries/B3F_1000")(options "")(descr ""))
   (lib (name "SSSS811101")(type "KiCad")(uri "${KIPRJMOD}/..//libraries/SSSS811101")(options "")(descr ""))
+  (lib (name "3220_10_0100_00")(type "KiCad")(uri "/home/rileytuttle/order66keyboard/pcb-files/libraries/3220_10_0100_00/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
