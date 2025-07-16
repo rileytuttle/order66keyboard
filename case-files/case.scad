@@ -86,11 +86,12 @@ module key_grid()
         back(key_spacing/2)
         grid_copies(n=[3,2], spacing=[4*key_spacing, 2*key_spacing]) {
             position(BOTTOM) cyl(d=5, l=pcb_to_key_grid, anchor=TOP);
-            position(TOP) screw_hole(mount_screw, l=10, thread=false, anchor=TOP) position(TOP) nut_trap_inline(1, anchor=TOP);
+            position(TOP) screw_hole(mount_screw, l=10, thread=false, anchor=TOP) position(TOP)
+            nut_trap_inline(1, anchor=TOP, spin=0);
         }
     }
 }
 
-case();
+// case();
 // up(10)
-// key_grid();
+key_grid();
