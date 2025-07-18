@@ -26,7 +26,8 @@ mount_hole_y_offset = 3.65;
 // mount_screw_head = "flat"; // ["flat", "socket"]
 mount_screw_head = "socket"; // ["flat", "socket"]
 
-switch_1_offset = 33.6;
+switch_1_offset = 33.1 + case_pcb_gap + case_edge_thickness;
+echo(str("switch 1 offset from right side of case: ", switch_1_offset));
 switch_1_width = 13;
 switch_1_y_offset = 3;
 switch_2_offset = 46.3;
@@ -92,6 +93,6 @@ module key_grid()
     }
 }
 
-// case();
+case();
 // up(10)
-key_grid();
+// key_grid();
