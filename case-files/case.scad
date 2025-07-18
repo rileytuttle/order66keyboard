@@ -26,7 +26,8 @@ mount_hole_y_offset = 3.65;
 // mount_screw_head = "flat"; // ["flat", "socket"]
 mount_screw_head = "socket"; // ["flat", "socket"]
 
-switch_1_offset = 33.6;
+switch_1_offset = 33.1 + case_pcb_gap + case_edge_thickness;
+echo(str("switch 1 offset from right side of case: ", switch_1_offset));
 switch_1_width = 13;
 switch_1_y_offset = 3;
 switch_2_offset = 46.3;
@@ -86,7 +87,8 @@ module key_grid()
         back(key_spacing/2)
         grid_copies(n=[3,2], spacing=[4*key_spacing, 2*key_spacing]) {
             position(BOTTOM) cyl(d=5, l=pcb_to_key_grid, anchor=TOP);
-            position(TOP) screw_hole(mount_screw, l=10, thread=false, anchor=TOP) position(TOP) nut_trap_inline(1, anchor=TOP);
+            position(TOP) screw_hole(mount_screw, l=10, thread=false, anchor=TOP) position(TOP)
+            nut_trap_inline(1, anchor=TOP, spin=0);
         }
     }
 }
