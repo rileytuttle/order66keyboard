@@ -9,7 +9,7 @@ corner_radius = 3;
 pcb_thickness = 1.6;
 rows=6;
 cols=12;
-mount_screw="M2.5";
+mount_screw="M2";
 mount_contact_diam=5.5;
 
 pcb_size = [228.6, 123];
@@ -23,8 +23,8 @@ case_size = [pcb_size[0]+case_edge_thickness*2+case_pcb_gap*2, pcb_size[1]+case_
 pcb_to_key_grid=3;
 
 mount_hole_y_offset = 3.65;
-// mount_screw_head = "flat"; // ["flat", "socket"]
-mount_screw_head = "socket"; // ["flat", "socket"]
+mount_screw_head = "flat"; // ["flat", "socket"]
+// mount_screw_head = "socket"; // ["flat", "socket"]
 
 switch_1_offset = 33.1 + case_pcb_gap + case_edge_thickness;
 echo(str("switch 1 offset from right side of case: ", switch_1_offset));
@@ -34,7 +34,6 @@ switch_2_offset = 46.3;
 switch_2_width = 6;
 switch_1 = true;
 switch_2 = false;
-
 module case()
 {
     diff() {
