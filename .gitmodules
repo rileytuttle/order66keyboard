@@ -1,3 +1,15 @@
 [submodule "case-files/openscad-library-manager"]
 	path = case-files/openscad-library-manager
 	url = git@github.com:rileytuttle/openscad-library-manager.git
+[submodule "order66-pcb"]
+	path = order66-pcb
+	url = git@github.com:rileytuttle/order66-pcb.git
+[submodule "order66-case"]
+	path = order66-case
+	url = git@github.com:rileytuttle/order66-case.git
+[submodule "zmk"]
+	path = zmk
+	url = git@github.com:rileytuttle/zmk.git
+[submodule "order66-shield"]
+	path = order66-shield
+	url = git@github.com:rileytuttle/order66-shield.git
