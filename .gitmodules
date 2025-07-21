@@ -8,5 +8,5 @@
 	path = zmk
 	url = git@github.com:rileytuttle/zmk.git
 [submodule "order66-shield"]
-	path = order66-shield
+	path = zmk-modules/order66-shield
 	url = git@github.com:rileytuttle/order66-shield.git
