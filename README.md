@@ -25,6 +25,9 @@ CASE
 * export the keygrid stl
 * print the files
 
+[Build Photos](./build-photos/)
+[![complete build](./build-photos/IMG_3964.jpg)](./build-photos/IMG_3964.jpg)
+
 SOFTWARE
 * check out the tag corresponding to the pcb version we have
 * follow instructions [here](https://zmk.dev/docs/development/local-toolchain/setup/container) to set up zmk devcontainer
