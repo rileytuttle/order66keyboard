@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+
+if SHIELD_ORDER66_LP
+
+config ZMK_KEYBOARD_NAME
+    default "order66lp"
+
+# 60 per-key SK6812MINI-E on one chain, driven over SPIM3.
+config ZMK_RGB_UNDERGLOW
+    select WS2812_STRIP
+    select SPI
+
+endif

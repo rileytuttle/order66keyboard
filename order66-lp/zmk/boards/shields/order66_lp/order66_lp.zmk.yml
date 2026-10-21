@@ -1,0 +1,11 @@
+file_format: "1"
+id: order66_lp
+name: Order66 LP
+type: shield
+url: https://github.com/rileytuttle/order66keyboard
+requires: [pro_micro]
+features:
+  - keys
+  - bluetooth
+  - underglow
+  - studio

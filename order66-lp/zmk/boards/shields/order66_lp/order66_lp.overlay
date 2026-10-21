@@ -1,0 +1,93 @@
+/*
+ * order66-lp: 5x12 ortholinear, Kailh Choc v1 hotswap, nice!nano v2.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * This is a plain 5x12 ortho, so it reuses ZMK's shared ortho_5x12 physical layout
+ * unmodified. The v1.0 board could not: its 6-key top row meant
+ * app/dts/layouts/common/ortho_5x12/all1u.dtsi had to be patched in a ZMK fork to
+ * grow a 6th row, which is why that board could never use the standard
+ * zmk-config + GitHub Actions flow. Dropping the top row removes the fork entirely.
+ *
+ * Physical key spacing is 18.0 x 17.0 mm (Choc v1 native) rather than 19.05 mm, but
+ * ZMK physical layouts are expressed in key units, not millimetres, so ortho_5x12
+ * is still the correct layout.
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/common/ortho_5x12/all1u.dtsi>
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &layout_ortho_5x12_all1u;
+    };
+
+    matrix_transform_60_all1u: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <5>;
+        map = <
+            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11)
+            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11)
+            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11)
+            RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11)
+            RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) RC(4,10) RC(4,11)
+            >;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+
+        diode-direction = "col2row";
+
+        /*
+         * Rows are the v1.0 board's ROW1..ROW5 renumbered after dropping its top row.
+         * Columns are unchanged from v1.0. Free pins: P0.02 (old ROW0), P0.17 and
+         * P0.20 (old nice!view MOSI/SCK).
+         *
+         * ROW1/ROW2 sit on P0.09/P0.10, the nRF52840 NFC pins. They worked on v1.0,
+         * but if you would rather not depend on that, move them to the free P0.17
+         * and P0.20 -- change both here and the schematic's NANO_NETS table.
+         *
+         * Portability caveat: the .zmk.yml says `requires: [pro_micro]`, which is
+         * what ZMK's metadata schema allows (an interconnect, not a board). But
+         * COL7/COL8/COL11 use P1.02/P1.07/P1.01 -- the nice!nano's extra bottom
+         * castellated pads, which are NOT on the pro_micro connector. So this only
+         * actually runs on a nice!nano.
+         *
+         * It need not: the pro_micro connector exposes exactly 18 GPIO and this
+         * board needs exactly 18 (17 matrix + 1 LED data), with 3 connector pins
+         * currently unused. Moving those three columns onto P0.17/P0.20/P0.02 would
+         * make the shield work on any pro_micro-footprint controller. Worth doing
+         * before the PCB is routed, if that portability is wanted.
+         */
+        row-gpios
+            = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
+            , <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
+            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW4
+            ;
+
+        col-gpios
+            = <&gpio0 31 GPIO_ACTIVE_HIGH> // COL0
+            , <&gpio1 15 GPIO_ACTIVE_HIGH> // COL1
+            , <&gpio1 13 GPIO_ACTIVE_HIGH> // COL2
+            , <&gpio0 8  GPIO_ACTIVE_HIGH> // COL3
+            , <&gpio0 24 GPIO_ACTIVE_HIGH> // COL4
+            , <&gpio1 0  GPIO_ACTIVE_HIGH> // COL5
+            , <&gpio0 11 GPIO_ACTIVE_HIGH> // COL6
+            , <&gpio1 2  GPIO_ACTIVE_HIGH> // COL7
+            , <&gpio1 7  GPIO_ACTIVE_HIGH> // COL8
+            , <&gpio1 4  GPIO_ACTIVE_HIGH> // COL9
+            , <&gpio1 6  GPIO_ACTIVE_HIGH> // COL10
+            , <&gpio1 1  GPIO_ACTIVE_HIGH> // COL11
+            ;
+    };
+};
+
+&layout_ortho_5x12_all1u {
+    transform = <&matrix_transform_60_all1u>;
+};

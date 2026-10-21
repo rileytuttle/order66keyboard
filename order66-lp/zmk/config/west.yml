@@ -1,0 +1,39 @@
+# West manifest for the Nix build. Pins UPSTREAM zmkfirmware/zmk deliberately:
+# this board needs no fork, and building against upstream is what proves it.
+#
+# Revisions are bumped by `nix run .#update`, which also rewrites zephyrDepsHash
+# in flake.nix.
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85  # main
+      import: app/west.yml
+    - name: zephyr
+      remote: zmkfirmware
+      revision: 10ba6d0cb38bc3d258775d27982f707599320085  # v4.1.0+zmk-fixes
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_silabs
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
+  self:
+    path: config

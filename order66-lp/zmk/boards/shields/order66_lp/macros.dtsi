@@ -1,0 +1,44 @@
+/*
+ * Macros referenced by order66_lp.keymap's MACROS layer.
+ *
+ * On the v1.0 board this file was in .gitignore and was never committed, so a fresh
+ * clone could not build -- order66.keymap included it and bound &work, &name and &ssh.
+ * These are committed placeholders so the build always works out of the box. Replace
+ * the bodies with whatever you actually want; keep the node names.
+ *
+ * See macros-example.dtsi in the v1.0 shield for the full macro syntax, including
+ * modifier press/release pairs for capital letters.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/ {
+    macros {
+        work: work {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap_time 1>
+                , <&macro_tap &kp W &kp O &kp R &kp K>
+                ;
+        };
+
+        name: name {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap_time 1>
+                , <&macro_tap &kp N &kp A &kp M &kp E>
+                ;
+        };
+
+        ssh: ssh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap_time 1>
+                , <&macro_tap &kp S &kp S &kp H &kp SPACE>
+                ;
+        };
+    };
+};

@@ -1,0 +1,18 @@
+# KiCad local/user state and backups
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.net
+~*
+_autosave-*
+__pycache__/
+*.pyc
+
+# Nix build output symlinks
+/result
+/result-*
+
+# NOTE: deliberately no ignores for a west workspace here. `west init -l zmk/config`
+# would make zmk/ the workspace root and clone Zephyr to zmk/zephyr -- colliding with
+# this module's own zmk/zephyr/module.yml. Run manual west builds outside the repo;
+# see BUILDING.md.
