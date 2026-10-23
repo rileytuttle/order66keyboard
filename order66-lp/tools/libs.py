@@ -12,6 +12,7 @@ LIBS = {
     'Diode': f'{STOCK}/Diode.kicad_sym',
     'Device': f'{STOCK}/Device.kicad_sym',
     'Connector': f'{STOCK}/Connector.kicad_sym',
+    'Connector_Generic': f'{STOCK}/Connector_Generic.kicad_sym',
     'Mechanical': f'{STOCK}/Mechanical.kicad_sym',
     'Regulator_Switching': f'{STOCK}/Regulator_Switching.kicad_sym',
     'Transistor_FET': f'{STOCK}/Transistor_FET.kicad_sym',

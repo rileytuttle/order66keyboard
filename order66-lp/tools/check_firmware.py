@@ -29,6 +29,10 @@ APP = os.path.join(ZMK, 'app')
 # the layout check runs against this instead of the fork's working tree.
 UPSTREAM_BASE = '6b44d33d'
 
+# Geometry, kept in step with tools/gen_schematic.py / gen_overlay.py
+EL_ROWS, EL_COLS = 11, 6
+N_KEYS = 5 * 12 + 2        # 60 keys + 2 dedicated mouse buttons
+
 fails = []
 
 
@@ -102,7 +106,8 @@ def main():
     used = set(re.findall(r'CONFIG_(\w+)', conf))
     used |= {m for m in re.findall(r'^config (\w+)', kdef, re.M)}
     used |= set(re.findall(r'select (\w+)', kdef))
-    external = {'WS2812_STRIP', 'SPI'}  # defined by Zephyr, not ZMK
+    # Defined by Zephyr, not ZMK, so they are not in this tree to be found.
+    external = {'WS2812_STRIP', 'SPI', 'I2C_NRFX', 'INPUT'}
     for sym in sorted(used - external):
         check(re.search(rf'^\s*(menu)?config {sym}\s*$', kconfig_text, re.M) is not None,
               f'CONFIG_{sym}')
@@ -149,11 +154,24 @@ def main():
               f'chosen node "{chosen}" is consumed by ZMK')
 
     # ---------------------------------------------------------- layout
-    print('\nshared physical layout')
+    # This board defines its own physical layout rather than including ZMK's shared
+    # ortho_5x12: that one has no central gap, and patching it is exactly what forced
+    # the v1.0 board's fork. A layout in our own module needs no fork.
+    print('\nphysical layout (ours, not ZMK\'s shared one)')
     inc = 'layouts/common/ortho_5x12/all1u.dtsi'
-    check(inc in overlay, f'overlay includes {inc}')
-    layout_path = os.path.join(APP, 'dts', inc)
-    check(os.path.exists(layout_path), f'{inc} exists in the tree')
+    check(inc not in overlay,
+          'overlay does NOT include the shared ortho_5x12 (it has no gap)')
+    check('compatible = "zmk,physical-layout"' in overlay,
+          'overlay defines its own zmk,physical-layout')
+    check('#include <physical_layouts.dtsi>' in overlay,
+          'overlay includes physical_layouts.dtsi for &key_physical_attrs')
+    n_attrs = len(re.findall(r'&key_physical_attrs', overlay))
+    check(n_attrs == N_KEYS, f'physical layout has {N_KEYS} keys (found {n_attrs})')
+    # the right half must be shifted by the gap
+    xs = [int(m.group(3)) for m in re.finditer(
+        r'&key_physical_attrs\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)', overlay)]
+    check(max(xs) > 1100,
+          f'right half is offset for the central gap (max x = {max(xs)})')
 
     # Count keys in UPSTREAM, since the local fork has this file patched.
     upstream = None
@@ -165,31 +183,38 @@ def main():
         pass
 
     transform_keys = len(re.findall(r'RC\(\d+,\s*\d+\)', overlay))
-    check(transform_keys == 60, f'matrix transform has 60 RC() entries (found {transform_keys})')
+    check(transform_keys == N_KEYS,
+          f'matrix transform has {N_KEYS} RC() entries (found {transform_keys})')
 
     rows = re.search(r'rows = <(\d+)>', overlay)
     cols = re.search(r'columns = <(\d+)>', overlay)
-    check(rows and rows.group(1) == '5', f'transform rows = 5 (got {rows and rows.group(1)})')
-    check(cols and cols.group(1) == '12', f'transform columns = 12 (got {cols and cols.group(1)})')
+    check(rows and rows.group(1) == str(EL_ROWS),
+          f'transform rows = {EL_ROWS} (got {rows and rows.group(1)})')
+    check(cols and cols.group(1) == str(EL_COLS),
+          f'transform columns = {EL_COLS} (got {cols and cols.group(1)})')
 
     n_rows = len(re.findall(r'<&gpio\d+\s+\d+\s+\(GPIO_ACTIVE_HIGH\s*\|\s*GPIO_PULL_DOWN\)>', overlay))
     n_cols = len(re.findall(r'<&gpio\d+\s+\d+\s+GPIO_ACTIVE_HIGH>', overlay))
-    check(n_rows == 5, f'5 row-gpios (found {n_rows})')
-    check(n_cols == 12, f'12 col-gpios (found {n_cols})')
+    check(n_rows == EL_ROWS, f'{EL_ROWS} row-gpios (found {n_rows})')
+    check(n_cols == EL_COLS, f'{EL_COLS} col-gpios (found {n_cols})')
 
-    if upstream:
-        up_keys = len(re.findall(r'&key_physical_attrs', upstream))
-        check(up_keys == 60,
-              f'UPSTREAM ortho_5x12 has 60 keys, matching this shield (found {up_keys})')
-        local = read(layout_path)
-        local_keys = len(re.findall(r'&key_physical_attrs', local))
-        if local_keys != 60:
-            print(f'  note  the ZMK checkout at {ZMK} has a PATCHED ortho_5x12 '
-                  f'({local_keys} keys, upstream has 60).')
-            print('        That patch exists only for the v1.0 board\'s 6-key top row.')
-            print('        Build order66_lp against upstream ZMK, not this fork.')
-    else:
-        print(f'  --   could not read upstream {UPSTREAM_BASE}; skipped the 60-key check')
+    print('  --   shared ortho_5x12 no longer used, so its key count is irrelevant')
+
+    # ---------------------------------------------------------- trackpad
+    print('\ntrackpad')
+    check('cirque,pinnacle2' in board_ov, 'board overlay instantiates cirque,pinnacle2')
+    check('reg = <0x2a>' in board_ov, 'I2C address 0x2a')
+    check('data-ready-gpios' in board_ov, 'data-ready GPIO wired')
+    check('zmk,input-listener' in board_ov,
+          'an input-listener feeds the trackpad to the HID mouse report')
+    check('nordic,nrf-twim' in board_ov, 'i2c0 overridden to the TWIM (DMA) variant')
+    west = read(os.path.join(ROOT, 'zmk', 'config', 'west.yml'))
+    check('cirque-input-module' in west, 'cirque-input-module is in the west manifest')
+    m = re.search(r'name: cirque-input-module\s+remote: \S+\s+revision: (\S+)', west)
+    check(bool(m) and re.fullmatch(r'[0-9a-f]{40}', m.group(1) or ''),
+          f'cirque module pinned to a SHA, not a branch (got {m and m.group(1)})')
+    for sym in ('CONFIG_I2C', 'CONFIG_I2C_NRFX', 'CONFIG_INPUT'):
+        check(sym in conf, f'{sym} set in the shield .conf')
 
     # ---------------------------------------------------------- LED chain
     print('\nbacklight')
@@ -209,7 +234,7 @@ def main():
     for i, body in enumerate(layers):
         body = re.sub(r'//[^\n]*', '', body)
         cnt = len([p for p in body.split('&')[1:] if p.strip()])
-        check(cnt == 60, f'layer {i} has 60 bindings (found {cnt})')
+        check(cnt == N_KEYS, f'layer {i} has {N_KEYS} bindings (found {cnt})')
 
     behaviours = sorted(set(re.findall(r'&(\w+)', re.sub(r'//[^\n]*', '', keymap))))
     LABEL = r'^\s*(?:/omit-if-no-ref/\s*)?(\w+):\s*[\w-]+\s*\{'

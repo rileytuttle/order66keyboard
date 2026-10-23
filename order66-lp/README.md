@@ -1,7 +1,8 @@
 # order66-lp
 
-A ground-up redesign of order66: **60-key 5×12 ortholinear**, **Kailh Choc v1 low
-profile only**, **per-key RGB backlight**, nice!nano v2, LiPo pouch battery.
+A ground-up redesign of order66: **60-key 5×12 ortholinear** split by a **54 mm central
+band**, **Kailh Choc v1 low profile only**, **per-key RGB backlight**, a **Cirque 40 mm
+trackpad** with two dedicated mouse buttons, nice!nano v2, LiPo pouch battery.
 
 Self-contained — nothing here points outside this directory, so it can be lifted into
 its own repo with a `git mv`. (The one exception is `tools/port_keymap.py`, which reads
@@ -14,7 +15,9 @@ yet.**
 
 | | v1.0 | order66-lp |
 |---|---|---|
-| Keys | 66 (6×12 with only 6 of 12 top-row positions) | 60 (5×12, full grid) |
+| Keys | 66 (6×12 with only 6 of 12 top-row positions) | 60 (5×12) + 2 mouse buttons |
+| Matrix | 6×12, geometric | **6 cols × 11 rows, half-split** |
+| Pointing | none | Cirque TM040040 trackpad on I2C |
 | Switches | MX hotswap, 19.05 mm | Kailh Choc v1 hotswap, **18.0 × 17.0 mm** |
 | Diodes | THT **and** SMD footprint on every key | SMD only, 1N4148WS SOD-323 |
 | Display | nice!view on a 1×05 riser | none |
@@ -22,7 +25,7 @@ yet.**
 | Backlight | none | 60 × SK6812MINI-E, one chain |
 | Passives | **zero** | boost converter, load switch, level shifter |
 | ZMK | **patched fork required** | upstream, unmodified |
-| Key field | 228.6 × 123.0 mm | 216.0 × 85.0 mm |
+| Board | 228.6 × 123.0 mm | **280.0 × 95.0 mm** (54 mm band, no back strip) |
 
 Kept deliberately, as redundant build options: both power-switch footprints
 (`SW62` EG1206A / `SW63` SSSS811101 — populate one) and both SWD header footprints
@@ -114,24 +117,59 @@ single-dot version; [icon caps](https://keycapsss.com/Choc-Low-Profile-Keycaps-w
 and translucent [Holo Crystal](https://keycapsss.com/MBK-Choc-Holo-Crystal-Keycap/KC10139-1U)
 also exist. Check the kit covers a 5×12 ortho before ordering.
 
-## Pin assignment
+## Matrix: 6 columns × 11 rows, half-split
 
-Columns are **unchanged from v1.0** (that half is proven on fabricated hardware).
-Rows are v1.0's `ROW1..ROW5` renumbered after dropping the dead top row.
+A 5×12 matrix is 17 pins for 60 positions and is **100 % full** — no room for the mouse
+buttons. 6×11 is *the same 17 pins* but 66 positions, so it pays for the buttons and
+still leaves 4 spare. It is a strict improvement, not a trade.
 
-| Row | nice!nano | | Col | nice!nano | | Col | nice!nano |
-|---|---|---|---|---|---|---|---|
-| ROW0 | 19 `P0.29` | | COL0 | 20 `P0.31` | | COL6 | 10 `P0.11` |
-| ROW1 | 13 `P0.09` | | COL1 | 17 `P1.15` | | COL7 | 32 `P1.02` |
-| ROW2 | 14 `P0.10` | | COL2 | 16 `P1.13` | | COL8 | 33 `P1.07` |
-| ROW3 | 15 `P1.11` | | COL3 | 2 `P0.08` | | COL9 | 11 `P1.04` |
-| ROW4 | 7 `P0.22` | | COL4 | 8 `P0.24` | | COL10 | 12 `P1.06` |
-| | | | COL5 | 9 `P1.00` | | COL11 | 31 `P1.01` |
+- electrical **columns 0–5** = the six physical columns of a half, shared by both halves
+- electrical **rows 0–4** = left half, **rows 5–9** = right half
+- electrical **row 10** = the two mouse buttons (cols 0–1); cols 2–5 spare
 
-**LED data: pin 1 `P0.06`** (SPIM3 MOSI) — freed from nice!view CS, and the pin
-upstream ZMK's own reference overlays use for WS2812.
+Row nets stay local to one half rather than spanning the board. An 8×8 matrix would have
+saved one further pin but cannot be mapped onto two 6-column halves, so ~20 of the 60
+keys would land on nets that don't match their physical position.
 
-17 matrix GPIO + 1 LED data = 18 of 21. Spare: `P0.02`, `P0.17`, `P0.20`.
+## Pin assignment — all 21 exposed GPIO used
+
+`COL0–5` and `ROW0–4` keep the pins they had on the 5×12 board; the old `COL6–11` pins
+become the right half's `ROW5–10`, so this is a minimal remap rather than a reshuffle.
+
+| | pins |
+|---|---|
+| COL0–5 | `P0.31` `P1.15` `P1.13` `P0.08` `P0.24` `P1.00` |
+| ROW0–4 (left half) | `P0.29` `P0.09` `P0.10` `P1.11` `P0.22` |
+| ROW5–10 (right half + buttons) | `P0.11` `P1.02` `P1.07` `P1.04` `P1.06` `P1.01` |
+| LED data | `P0.06` (SPIM3 MOSI) |
+| trackpad I2C | `P0.17` SDA / `P0.20` SCL — the nice!nano's own `&i2c0` pins |
+| trackpad data-ready | `P0.02` |
+
+17 matrix + 1 LED + 2 I2C + 1 IRQ = **21 of 21**. No spare GPIO, but 4 spare matrix
+positions.
+
+The I2C assignment is a lucky one: the nice!nano already pins `&i2c0` to TWIM_SDA on
+`P0.17` and TWIM_SCL on `P0.20`, so the firmware needs no pinctrl override at all.
+
+## Trackpad
+
+Cirque GlidePoint **TM040040** — 40.0 mm module, 38.0 mm active, 5.61 mm thick with
+components — on I2C at `0x2a`, via a 12-way 0.5 mm FFC tail into a
+`CON_FH33J-12S-0.5SH` (already vendored in marbastlib).
+
+**It must be standoff-mounted on the front face, not flush in a cutout.** The PCB staying
+solid behind it is what lets the controller sit directly on the back; with a cutout, a
+40 mm pad + 33 mm nano + 17 mm of buttons needs 90 mm of a band that only has 85. On
+standoffs the touch surface lands ~6 mm above the PCB, well under the ~11–12 mm MBK
+keycap plane, so it reads as a shallow well.
+
+Two things to remember: the module ships **strapped for SPI — remove its R1** for I2C,
+and a bare module on our own connector means **we supply the I2C pull-ups** (R9/R10,
+4k7) that the usual adapter PCBs would carry. VDD is on the nano's switchable `VCC`, so
+ZMK's `ext_power` gates the trackpad along with the backlight.
+
+Driver is [`cirque-input-module`](https://github.com/nxtkb/cirque-input-module), pinned
+to a SHA in `zmk/config/west.yml` — the only sensor driver ZMK's own pointing docs name.
 
 `ROW1`/`ROW2` sit on `P0.09`/`P0.10`, the nRF52840 NFC pins. They worked on v1.0 so
 they are kept, but if you would rather not depend on `CONFIG_NFCT_PINS_AS_GPIO`
@@ -260,7 +298,11 @@ net assignment mechanical.
 
 | | |
 |---|---|
-| `tools/gen_schematic.py` | writes `pcb/order66-lp.kicad_sch` |
+| `tools/gen_schematic.py` | writes `pcb/order66-lp.kicad_sch`; owns the pin map and matrix mapping |
+| `tools/gen_overlay.py` | writes the ZMK overlays **from that same pin map**, so firmware cannot drift from hardware |
+| `tools/gen_pcb.py` | writes `pcb/order66-lp.kicad_pcb` — outline and placement, no traces |
+| `tools/check_pcb.py` | placement assertions: pitch, band keyless, band packing, design rules |
+| `tools/gen_nano_footprint.py` | derives the mixed THT/SMD nice!nano footprint |
 | `tools/check_schematic.py` | netlist assertions — the checks ERC cannot do |
 | `tools/erc.sh` | ERC against a throwaway KiCad config |
 | `tools/check_firmware.py` | static verification of the shield against a ZMK tree |

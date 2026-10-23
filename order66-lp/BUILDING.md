@@ -122,17 +122,32 @@ nix flake update
 
 ### If you edit `zmk/config/west.yml` by hand
 
-`zephyrDepsHash` will no longer match and the build fails with a hash mismatch that
-prints the correct value:
+**You must also invalidate `zephyrDepsHash`, and Nix will not tell you that.** A
+fixed-output derivation's store path is determined by its *declared hash*, not by its
+inputs — so changing `west.yml` while leaving the hash alone makes Nix reuse the
+previously fetched workspace. It does not refetch and it does not warn. The build then
+succeeds against stale dependencies, or fails somewhere confusing: adding the Cirque
+module this way produced
 
 ```
-error: hash mismatch in fixed-output derivation '...-west-deps.drv':
-         specified: sha256-AAAA...
-            got:    sha256-UAzb4OqLBddEcrWSknfmlHKPQSsJnYJusxim/6w7pPU=
+undefined reference to `__device_dts_ord_15'
 ```
 
-Paste the `got:` value into `zephyrDepsHash` and build again. That is the normal
-workflow, not an error on your part.
+from `input_listener.c` — the devicetree referenced a driver that was never fetched,
+let alone compiled.
+
+The fix is to deliberately break the hash, then paste back the real one:
+
+1. Set `zephyrDepsHash` to `"sha256-AAAA...="` (any wrong value of the right shape).
+2. Build. Nix now refetches and reports the mismatch:
+   ```
+   error: hash mismatch in fixed-output derivation '...-west-deps.drv':
+            specified: sha256-AAAA...
+               got:    sha256-<the real one>
+   ```
+3. Paste the `got:` value in and build again.
+
+`nix run .#update` does all of this for you, which is why it is the preferred route.
 
 ## ZMK Studio
 

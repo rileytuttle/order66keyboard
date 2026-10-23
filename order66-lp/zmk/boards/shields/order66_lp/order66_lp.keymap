@@ -5,6 +5,9 @@
  * first 12 bindings of each layer: the old board had a 6-key top row wired as
  * matrix row 0, and every layer bound all of it to &none / &trans.
  *
+ * Two bindings are then appended for the dedicated mouse buttons beside the
+ * trackpad, giving 62 per layer.
+ *
  * SPDX-License-Identifier: MIT
  */
 
@@ -47,6 +50,7 @@
                 &lt MOUSE CAPS  &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp RET
                 &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
                 &kp LCTRL       &mo BT_CTRL     &kp LALT        &kp LGUI        &mo RAISE       &mo TMUX        &kp SPACE       &mo LOWER       &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
+                &mkp LCLK       &mkp RCLK   // mouse buttons
             >;
         };
 
@@ -58,6 +62,7 @@
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
                 &trans       &trans       &trans       &trans       &kp SPACE    &mo RAISE    &kp SPACE    &mo LOWER    &trans       &trans       &trans       &tog GAMING
+                &trans       &trans   // mouse buttons
             >;
         };
 
@@ -75,6 +80,7 @@
                 &trans           &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_RIGHT  &trans           &trans           &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans           &tog MOUSE
                 &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans
                 &trans           &trans           &trans           &trans           &trans           &mkp LCLK        &mkp RCLK        &trans           &trans           &trans           &trans           &trans
+                &trans           &trans   // mouse buttons
             >;
         };
 
@@ -92,6 +98,7 @@
                 &kp RET     &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp SQT     &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &mo ADJUST  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+                &trans      &trans   // mouse buttons
             >;
         };
        
@@ -109,6 +116,7 @@
                 &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans        &trans        &kp N1        &kp N2        &kp N3        &kp STAR      &trans
                 &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp N0        &kp COMMA     &kp DOT       &kp FSLH      &trans
                 &kp RCTRL     &trans        &trans        &trans        &mo ADJUST    &trans        &kp K_PP      &trans        &kp K_PREV    &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT
+                &trans        &trans   // mouse buttons
             >;
         };
 
@@ -126,6 +134,7 @@
                 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &tog GAMING     &trans          &trans          &trans          &trans
                 &studio_unlock  &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
                 &trans          &trans          &trans          &trans          &trans          &bootloader     &bootloader     &trans          &trans          &trans          &trans          &trans
+                &trans          &trans   // mouse buttons
             >;
         };
 
@@ -143,6 +152,7 @@
                 &rgb_ug RGB_TOG    &rgb_ug RGB_BRI    &rgb_ug RGB_BRD    &rgb_ug RGB_HUI    &rgb_ug RGB_HUD    &rgb_ug RGB_EFF    &trans             &trans             &trans             &trans             &trans             &trans
                 &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans
                 &trans             &trans             &trans             &trans             &trans             &trans             &trans             &trans             &bt BT_PRV         &trans             &trans             &bt BT_NXT
+                &trans             &trans   // mouse buttons
             >;
         };
 
@@ -160,6 +170,7 @@
                 &trans            &trans            &trans            &trans            &trans            &trans            &kp LC(LEFT)      &kp LC(DOWN)      &kp LC(UP)        &kp LC(RIGHT)     &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
                 &kp LALT          &trans            &trans            &trans            &trans            &trans            &trans            &trans            &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(UP)        &kp LS(RIGHT)
+                &trans            &trans   // mouse buttons
             >;
         };
 
@@ -171,6 +182,7 @@
                 &trans  &trans  &ssh    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans   // mouse buttons
             >;
         };
     };

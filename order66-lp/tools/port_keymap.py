@@ -28,6 +28,11 @@ OLD_COLS, OLD_ROWS = 12, 6
 NEW_ROWS = 5
 DROP = OLD_COLS  # the dead top row
 
+# Two dedicated mouse buttons sit on electrical row 10 and are appended after the 60
+# key bindings, matching the order of the matrix transform in gen_overlay.py.
+MOUSE_BINDINGS = ('&mkp LCLK', '&mkp RCLK')
+N_MOUSE = len(MOUSE_BINDINGS)
+
 # Bindings for hardware the v1.0 keymap had no concept of. Each one lands in a slot
 # that is &trans after the port, and the porter refuses to overwrite anything else.
 # Indices are into the 60 post-port bindings (row * 12 + col).
@@ -68,12 +73,16 @@ def split_bindings(body):
 
 
 def render(bindings, indent='                '):
-    """Lay the bindings out 12 per row, columns padded to line up."""
-    rows = [bindings[i:i + OLD_COLS] for i in range(0, len(bindings), OLD_COLS)]
+    """Lay the bindings out 12 per row, with the mouse buttons on their own line."""
+    main, extra = bindings[:-N_MOUSE], bindings[-N_MOUSE:]
+    rows = [main[i:i + OLD_COLS] for i in range(0, len(main), OLD_COLS)] + [extra]
     width = max(len(b) for b in bindings) + 2
     out = []
-    for row in rows:
-        out.append(indent + ''.join(b.ljust(width) for b in row).rstrip())
+    for i, row in enumerate(rows):
+        line = indent + ''.join(b.ljust(width) for b in row).rstrip()
+        if i == len(rows) - 1:
+            line += '   // mouse buttons'
+        out.append(line)
     return '\n'.join(out)
 
 
@@ -112,6 +121,10 @@ def main():
                 return match.group(0)
             kept[idx] = binding
             added += 1
+        # Append the mouse buttons. On the base layer they are real clicks; on every
+        # other layer they pass through so layer-specific bindings still reach them.
+        kept += list(MOUSE_BINDINGS if name == 'default_layer'
+                     else ('&trans',) * N_MOUSE)
         layers.append((name, len(b), len(kept), added))
         return f'{head}\n{render(kept)}\n            {tail}'
 
@@ -137,6 +150,9 @@ def main():
         ' * Ported from the v1.0 order66 keymap by tools/port_keymap.py, which drops the\n'
         ' * first 12 bindings of each layer: the old board had a 6-key top row wired as\n'
         ' * matrix row 0, and every layer bound all of it to &none / &trans.\n'
+        ' *\n'
+        ' * Two bindings are then appended for the dedicated mouse buttons beside the\n'
+        ' * trackpad, giving 62 per layer.\n'
         ' *\n'
         ' * SPDX-License-Identifier: MIT\n'
         ' */\n')

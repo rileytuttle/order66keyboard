@@ -65,7 +65,7 @@
 
         # Fixed-output hash of the west workspace. Changes whenever
         # zmk/config/west.yml does; `nix run .#update` rewrites both together.
-        zephyrDepsHash = "sha256-UAzb4OqLBddEcrWSknfmlHKPQSsJnYJusxim/6w7pPU=";
+        zephyrDepsHash = "sha256-MWBDRG+F3Pfj2fQZ65+vLTrZ90dnMslkn4XAkIMfKJQ=";
 
         meta = {
           description = "ZMK firmware for order66-lp";

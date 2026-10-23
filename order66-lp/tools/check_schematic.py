@@ -23,7 +23,11 @@ from sexpr import parse, get, getall  # noqa: E402
 SCH = os.path.join(ROOT, 'pcb', 'order66-lp.kicad_sch')
 OVERLAY = os.path.join(ROOT, 'zmk', 'boards', 'shields', 'order66_lp', 'order66_lp.overlay')
 NET = '/tmp/order66lp.net'
-ROWS, COLS = 5, 12
+PHYS_ROWS, PHYS_COLS = 5, 12     # physical key grid
+EL_ROWS, EL_COLS = 11, 6         # electrical matrix
+N_KEYS = PHYS_ROWS * PHYS_COLS   # 60
+N_BTN = 2                        # dedicated mouse buttons
+N_SW = N_KEYS + N_BTN            # 62 matrix positions used
 
 fails = []
 notes = []
@@ -87,8 +91,10 @@ def main():
     print('key matrix')
     switches = sorted((r for r in parts if re.fullmatch(r'SW\d+', r)),
                       key=lambda r: int(r[2:]))
-    keys = [r for r in switches if int(r[2:]) <= ROWS * COLS]
-    check(len(keys) == 60, f'60 key switches (found {len(keys)})')
+    keys = [r for r in switches if int(r[2:]) <= N_SW]
+    check(len(keys) == N_SW,
+          f'{N_KEYS} keys + {N_BTN} mouse buttons = {N_SW} matrix switches '
+          f'(found {len(keys)})')
 
     pairs = {}
     bad_dir = []
@@ -113,20 +119,33 @@ def main():
         print(f'       {b}')
 
     dupes = {k: v for k, v in pairs.items() if len(v) > 1}
-    check(not dupes, f'all 60 (row, col) pairs unique ({len(dupes)} collisions)')
+    check(not dupes, f'all {N_SW} (row, col) pairs unique ({len(dupes)} collisions)')
     for k, v in list(dupes.items())[:5]:
         print(f'       {k} used by {v}')
 
-    want = {(f'ROW{r}', f'COL{c}') for r in range(ROWS) for c in range(COLS)}
-    check(set(pairs) == want, f'matrix covers all {len(want)} positions')
-    missing = want - set(pairs)
-    for m in sorted(missing)[:5]:
-        print(f'       missing {m}')
+    grid = {(f'ROW{r}', f'COL{c}') for r in range(EL_ROWS) for c in range(EL_COLS)}
+    check(set(pairs) <= grid,
+          f'every pair lies inside the {EL_ROWS}x{EL_COLS} matrix')
+    check(len(pairs) == N_SW, f'{N_SW} of {len(grid)} positions used')
+    spare = grid - set(pairs)
+    check(len(spare) == len(grid) - N_SW,
+          f'{len(grid) - N_SW} spare positions for later ({sorted(spare)})')
+
+    # The half-split mapping is the point of the 6x11 shape: rows 0-4 must belong to
+    # the left half only, rows 5-9 to the right half only, row 10 to the buttons.
+    left = {p for p in pairs if int(p[0][3:]) <= 4}
+    right = {p for p in pairs if 5 <= int(p[0][3:]) <= 9}
+    btn = {p for p in pairs if int(p[0][3:]) == EL_ROWS - 1}
+    check(len(left) == 30 and len(right) == 30,
+          f'half-split holds: {len(left)} keys on rows 0-4, {len(right)} on rows 5-9')
+    check(len(btn) == N_BTN, f'{N_BTN} switches on the mouse-button row')
 
     # ---------------------------------------------------------------- backlight
     print('\nbacklight')
     leds = [r for r in parts if re.fullmatch(r'LED\d+', r)]
-    check(len(leds) == 60, f'60 LEDs (found {len(leds)})')
+    check(len(leds) == N_KEYS,
+          f'{N_KEYS} LEDs - one per key, none on the mouse buttons '
+          f'(found {len(leds)})')
 
     # Walk the chain: LED n pin 2 (DOUT) must share a net with LED n+1 pin 3 (DIN).
     chain, seen, cur = [], set(), 'LED1'
@@ -140,7 +159,8 @@ def main():
                 nxt = ref
                 break
         cur = nxt
-    check(len(chain) == 60, f'LED chain is one unbroken path of 60 (walked {len(chain)})')
+    check(len(chain) == N_KEYS,
+          f'LED chain is one unbroken path of {N_KEYS} (walked {len(chain)})')
 
     first_din = net_of(nets, 'LED1', '3')
     check(first_din == 'LED_DIN_5V', f'chain starts on LED_DIN_5V (got {first_din})')
@@ -154,7 +174,7 @@ def main():
     check(all(net_of(nets, r, '4') == 'GND' for r in leds), 'every LED VSS on GND')
 
     caps = [r for r in parts if re.fullmatch(r'C1\d\d', r)]
-    check(len(caps) == 60, f'60 LED decoupling caps (found {len(caps)})')
+    check(len(caps) == N_KEYS, f'{N_KEYS} LED decoupling caps (found {len(caps)})')
 
     # ---------------------------------------------------------------- power
     print('\nLED power chain')
@@ -171,8 +191,8 @@ def main():
         ('U2', '5', 'BST_SW',    'boost switch node'),
         ('L1', '1', 'VBATT_LED', 'inductor from the switched battery rail'),
         ('L1', '2', 'BST_SW',    'inductor into the switch node'),
-        ('D61', '2', 'BST_SW',   'Schottky anode on the switch node'),
-        ('D61', '1', 'VLED',     'Schottky cathode makes VLED'),
+        ('D63', '2', 'BST_SW',   'Schottky anode on the switch node'),
+        ('D63', '1', 'VLED',     'Schottky cathode makes VLED'),
         ('U3', '5', 'VLED',      'level shifter powered from VLED'),
         ('U3', '1', 'GND',       'level shifter OE tied low (output enabled)'),
         ('U3', '4', 'LED_DIN_PRE', 'level shifter output'),
@@ -192,12 +212,40 @@ def main():
     print('\nMCU pin assignment')
     nano_pins = {p: n for n, nodes in nets.items() for r, p in nodes if r == 'U1'}
     used = sorted(n for n in nano_pins.values() if re.fullmatch(r'(ROW|COL)\d+', n))
-    check(len(used) == 17, f'17 matrix GPIO used (found {len(used)})')
-    check(len(set(used)) == 17, 'no matrix net on two MCU pins')
+    want_pins = EL_ROWS + EL_COLS
+    check(len(used) == want_pins, f'{want_pins} matrix GPIO used (found {len(used)})')
+    check(len(set(used)) == want_pins, 'no matrix net on two MCU pins')
+    gpio = [n for n in nano_pins.values()
+            if n not in ('GND', 'VCC', 'RST', 'VBATT+')]
+    check(len(gpio) == len(set(gpio)) == 21,
+          f'all 21 exposed GPIO assigned exactly once (found {len(gpio)})')
     check(nano_pins.get('24') == 'VBATT+', f"BATIN on VBATT+ (got {nano_pins.get('24')})")
     check(nano_pins.get('21') == 'VCC', f"VCC pin on VCC (got {nano_pins.get('21')})")
     check(nano_pins.get('1') == 'LED_DIN_3V3',
           f"P0.06 drives the LED chain (got {nano_pins.get('1')})")
+
+    # ---------------------------------------------------------------- trackpad
+    print('\ntrackpad')
+    for ref, pin, want_net, desc in (
+            ('J4', '9', 'TP_SCL', 'FFC pin 9 is SCL'),
+            ('J4', '10', 'TP_SDA', 'FFC pin 10 is SDA'),
+            ('J4', '11', 'GND', 'FFC pin 11 is GND'),
+            ('J4', '12', 'VCC', 'FFC pin 12 is VDD, on the switchable rail'),
+            ('J4', '4', 'TP_DR', 'FFC pin 4 is data-ready')):
+        got = net_of(nets, ref, pin)
+        check(got == want_net, f'{desc} ({ref}.{pin} = {got})')
+    # KiCad names a no-connect pin's net 'unconnected-(J4-PadN)' rather than leaving
+    # it out of the netlist, so check for that shape instead of None.
+    for pin in ('1', '2', '3', '5', '6', '7', '8'):
+        got = net_of(nets, 'J4', pin)
+        check(got is None or got.startswith('unconnected-'),
+              f'FFC pin {pin} not connected (SPI-only or a Pinnacle button)')
+    for net in ('TP_SDA', 'TP_SCL'):
+        members = {r for r, _ in nets.get(net, [])}
+        check({'U1', 'J4'} <= members,
+              f'{net} reaches both the MCU and the FFC ({sorted(members)})')
+        check(any(r in ('R9', 'R10') for r in members),
+              f'{net} has a pull-up (members {sorted(members)})')
 
     # ---------------------------------------------------------------- firmware
     print('\nschematic vs ZMK overlay')
@@ -228,11 +276,13 @@ def main():
             got_gpio = nano.get(pin)
             if want_gpio and got_gpio and want_gpio != got_gpio:
                 mismatch.append(f'{net}: schematic {got_gpio} vs overlay {want_gpio}')
-        check(not mismatch, f'all 17 matrix pins agree with the overlay')
+        check(not mismatch,
+              f'all {EL_ROWS + EL_COLS} matrix pins agree with the overlay')
         for m in mismatch[:8]:
             print(f'       {m}')
         covered = [n for n in pinmap if re.fullmatch(r'(ROW|COL)\d+', n)]
-        check(len(covered) == 17, f'overlay declares 17 matrix GPIO (found {len(covered)})')
+        check(len(covered) == EL_ROWS + EL_COLS,
+              f'overlay declares {EL_ROWS + EL_COLS} matrix GPIO (found {len(covered)})')
 
     # ---------------------------------------------------------------- summary
     print()

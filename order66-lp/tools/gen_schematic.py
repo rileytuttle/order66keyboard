@@ -22,7 +22,39 @@ from schlib import Sch, uid  # noqa: E402
 
 OUT = os.path.join(os.path.dirname(HERE), 'pcb', 'order66-lp.kicad_sch')
 
-ROWS, COLS = 5, 12
+# Physical key grid, and the electrical matrix it maps onto.
+#
+# The board is two 6-column halves separated by a central band. A 6-column x 11-row
+# matrix is the same 17 pins as the old 5x12 but gives 66 positions instead of 60, so
+# it pays for the two dedicated mouse buttons and still leaves 4 spare -- it is a
+# strict improvement, not a trade. Electrical columns are shared by both halves;
+# each half gets its own block of electrical rows, which keeps row nets local to one
+# half instead of spanning the board.
+#
+#   left  half, physical cols 0-5  -> electrical rows 0-4,  cols 0-5
+#   right half, physical cols 6-11 -> electrical rows 5-9,  cols 0-5
+#   mouse buttons                  -> electrical row 10,    cols 0-1
+#   spare                          -> electrical row 10,    cols 2-5
+PHYS_ROWS, PHYS_COLS = 5, 12
+EL_ROWS, EL_COLS = 11, 6
+MOUSE_BTN_ROW = 10
+
+# Physical geometry, shared with tools/gen_pcb.py and tools/gen_overlay.py so the
+# board, the firmware layout and the schematic cannot disagree about it.
+#
+# GAP is 54 mm, not the 45 mm first planned: the band has to stack a 33 mm controller,
+# the trackpad's 40 mm exclusion and 17 mm of mouse buttons vertically while also
+# holding the boost rail and six connectors, and 45 mm came up 2 mm short (the
+# assertion in gen_pcb.py caught it). 54 mm is also exactly 3.00 key units, which
+# keeps the ZMK physical layout on a tidy grid.
+PITCH_X, PITCH_Y = 18.0, 17.0
+GAP = 54.0
+HALF_COLS = PHYS_COLS // 2
+
+
+def el_pos(r, c):
+    """Physical key (row, col) -> electrical (row, col)."""
+    return (r, c) if c < 6 else (r + 5, c - 6)
 
 # --- part numbers -----------------------------------------------------------------
 SW = 'marbastlib-choc:choc_v1_SW_HS_CPG135001S30'
@@ -31,6 +63,7 @@ D_MATRIX = 'Diode:1N4148WS'
 R, C, L = 'Device:R', 'Device:C', 'Device:L'
 NANO = 'nice_nano:nice_nano'
 CONN2 = 'Connector:Conn_01x02_Pin'
+CONN12 = 'Connector_Generic:Conn_01x12'
 HOLE = 'Mechanical:MountingHole'
 
 FP_R = 'Resistor_SMD:R_0402_1005Metric'
@@ -44,36 +77,59 @@ FP_JST = 'Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical'
 # B3F-10xx was split into per-variant footprints in newer KiCad libraries.
 FP_RST = 'Button_Switch_THT:SW_TH_Tactile_Omron_B3F-100x'
 FP_HOLE = 'MountingHole:MountingHole_2.7mm_M2.5'
+# Hirose FH33J, 12 way, 0.5 mm pitch -- the Cirque trackpad's FFC tail.
+FP_FFC12 = 'marbastlib-various:CON_FH33J-12S-0.5SH'
+
+# Cirque GlidePoint 12-pin FFC pinout. Pins 1/2/3/5 are the SPI interface and are
+# unused in I2C mode; 6/7/8 are the Pinnacle's own hardware button inputs, left
+# unconnected here because the mouse buttons go in the key matrix instead.
+CIRQUE_FFC = {
+    1: None,      # SCK  (SPI only)
+    2: None,      # SO   (SPI only)
+    3: None,      # SS   (SPI only)
+    4: 'TP_DR',   # data ready
+    5: None,      # SI   (SPI only)
+    6: None,      # B2   hardware button 2
+    7: None,      # B3   hardware button 3
+    8: None,      # B1   hardware button 1
+    9: 'TP_SCL',
+    10: 'TP_SDA',
+    11: 'GND',
+    12: 'VCC',    # 2.5-3.6 V; on the nano's switchable rail so ext_power gates it
+}
 
 # nice!nano v2 pin -> net. Columns are unchanged from the v1.0 board; rows are the old
 # ROW1..ROW5 renumbered after dropping the 6-key top row.
 NANO_NETS = {
-    1:  'LED_DIN_3V3',   # TX0/P0.06  -- was nice!view CS; SPIM3 MOSI for the LED chain
+    # All 21 exposed GPIO are used: 6 columns + 11 rows + LED data + I2C + data-ready.
+    # COL0-5 and ROW0-4 keep the pins they had on the 5x12 board; the old COL6-11 pins
+    # become the right half's ROW5-10, so this is a minimal remap rather than a reshuffle.
+    1:  'LED_DIN_3V3',   # TX0/P0.06  -- SPIM3 MOSI for the backlight chain
     2:  'COL3',          # RX1/P0.08
     3:  'GND', 4: 'GND',
-    5:  None,            # P0.17      -- spare (was nice!view MOSI)
-    6:  None,            # P0.20      -- spare (was nice!view SCK)
+    5:  'TP_SDA',        # P0.17      -- trackpad I2C (was nice!view MOSI)
+    6:  'TP_SCL',        # P0.20      -- trackpad I2C (was nice!view SCK)
     7:  'ROW4',          # P0.22
     8:  'COL4',          # P0.24
     9:  'COL5',          # P1.00
-    10: 'COL6',          # P0.11
-    11: 'COL9',          # P1.04
-    12: 'COL10',         # P1.06
+    10: 'ROW5',          # P0.11      -- was COL6
+    11: 'ROW8',          # P1.04      -- was COL9
+    12: 'ROW9',          # P1.06      -- was COL10
     13: 'ROW1',          # NFC1/P0.09
     14: 'ROW2',          # NFC2/P0.10
     15: 'ROW3',          # P1.11
     16: 'COL2',          # P1.13
     17: 'COL1',          # P1.15
-    18: None,            # AIN0/P0.02 -- spare (was ROW0 of the old 6-row matrix)
+    18: 'TP_DR',         # AIN0/P0.02 -- trackpad data-ready interrupt
     19: 'ROW0',          # AIN5/P0.29
     20: 'COL0',          # AIN7/P0.31
     21: 'VCC',           # switchable 3.3V rail, gated by ZMK ext_power (P0.13)
     22: 'RST',
     23: 'GND',
     24: 'VBATT+',        # BATIN/P0.04
-    31: 'COL11',         # P1.01
-    32: 'COL7',          # P1.02
-    33: 'COL8',          # P1.07
+    31: 'ROW10',         # P1.01      -- was COL11; mouse-button row
+    32: 'ROW6',          # P1.02      -- was COL7
+    33: 'ROW7',          # P1.07      -- was COL8
 }
 
 
@@ -81,6 +137,8 @@ def build():
     s = Sch(paper='A1', root_uuid='0d912afe-3c92-44f1-b16a-9458144618fa')
 
     key_matrix(s)
+    mouse_buttons(s)
+    trackpad(s)
     led_array(s)
     led_decoupling(s)
     mcu(s)
@@ -108,31 +166,77 @@ def power_flags(s):
 
 
 # ---------------------------------------------------------------- key matrix
+def _switch_cell(s, ref, dref, at, el_row, el_col, value='CHOC_V1_HS'):
+    """One col2row cell: COL -> switch -> diode anode, cathode -> ROW."""
+    x0, y0 = at
+    d_at = (x0 + 11.43, y0)
+    s.symbol(D_MATRIX, dref, d_at, value='1N4148WS', footprint='Diode_SMD:D_SOD-323')
+    k_pin = s.pin(D_MATRIX, d_at, 1)          # cathode -> ROW
+    a_pin = s.pin(D_MATRIX, d_at, 2)          # anode   -> switch
+
+    sw_at = (x0 + 22.86, y0 + 2.54)
+    s.symbol(SW, ref, sw_at, value=value,
+             ref_offset=(-1.27, -6.35), val_offset=(-1.27, 6.35), hide_value=True)
+    p1 = s.pin(SW, sw_at, 1)                  # upper-left  -> diode anode
+    p2 = s.pin(SW, sw_at, 2)                  # lower-right -> COL
+
+    s.stub(f'ROW{el_row}', k_pin, 7.62, 'left')
+    s.wire(a_pin, p1)
+    s.stub(f'COL{el_col}', p2, 6.35, 'right')
+
+
 def key_matrix(s):
     x0b, y0b, px, py = 30.48, 45.72, 38.1, 25.4
-    s.text('KEY MATRIX  --  5 rows x 12 cols, 60 keys, col2row '
-           '(COL -> switch -> diode anode, cathode -> ROW)', (30.48, 30.48))
+    s.text(f'KEY MATRIX  --  {PHYS_ROWS} x {PHYS_COLS} physical keys on a '
+           f'{EL_ROWS} row x {EL_COLS} col matrix, col2row.  '
+           f'Left half -> rows 0-4, right half -> rows 5-9, mouse buttons -> row 10.',
+           (30.48, 30.48))
 
-    for r in range(ROWS):
-        for c in range(COLS):
-            k = r * COLS + c + 1
-            x0 = x0b + c * px
-            y0 = y0b + r * py
+    for r in range(PHYS_ROWS):
+        for c in range(PHYS_COLS):
+            k = r * PHYS_COLS + c + 1
+            er, ec = el_pos(r, c)
+            _switch_cell(s, f'SW{k}', f'D{k}',
+                         (x0b + c * px, y0b + r * py), er, ec)
 
-            d_at = (x0 + 11.43, y0)
-            s.symbol(D_MATRIX, f'D{k}', d_at, value='1N4148WS', footprint='Diode_SMD:D_SOD-323')
-            k_pin = s.pin(D_MATRIX, d_at, 1)      # cathode -> ROW
-            a_pin = s.pin(D_MATRIX, d_at, 2)      # anode   -> switch
 
-            sw_at = (x0 + 22.86, y0 + 2.54)
-            s.symbol(SW, f'SW{k}', sw_at, value='CHOC_V1_HS',
-                     ref_offset=(-1.27, -6.35), val_offset=(-1.27, 6.35), hide_value=True)
-            p1 = s.pin(SW, sw_at, 1)              # upper-left  -> diode anode
-            p2 = s.pin(SW, sw_at, 2)              # lower-right -> COL
+def mouse_buttons(s):
+    """Two dedicated switches in front of the trackpad, on electrical row 10."""
+    s.text('MOUSE BUTTONS  --  electrical row 10; cols 2-5 of that row are spare',
+           (30.48, 167.64))
+    for i in range(2):
+        _switch_cell(s, f'SW{61 + i}', f'D{61 + i}',
+                     (30.48 + i * 38.1, 177.8), MOUSE_BTN_ROW, i,
+                     value='MOUSE_BTN')
 
-            s.stub(f'ROW{r}', k_pin, 7.62, 'left')
-            s.wire(a_pin, p1)
-            s.stub(f'COL{c}', p2, 6.35, 'right')
+
+def trackpad(s):
+    """Cirque GlidePoint TM040040 on I2C, via a 12-way 0.5 mm FFC tail.
+
+    The module ships strapped for SPI -- its R1 must be removed to select I2C. VDD
+    goes to the nano's switchable VCC rail so ZMK's ext_power gates the trackpad along
+    with the backlight. The adapter PCBs people normally buy carry the I2C pull-ups;
+    wiring a bare module to our own connector means we supply them.
+    """
+    at = (558.8, 469.9)      # on the 1.27 mm grid
+    s.text('TRACKPAD  --  Cirque TM040040, I2C @ 0x2a.  Remove the module\'s R1 to '
+           'select I2C.  Pins 1/2/3/5 are SPI-only; 6/7/8 are its hardware buttons.',
+           (520.7, 452.12))
+    s.symbol(CONN12, 'J4', at, value='Cirque FFC', footprint=FP_FFC12,
+             ref_offset=(0, -17.78), val_offset=(0, 17.78))
+    for pin, net in CIRQUE_FFC.items():
+        p = s.pin(CONN12, at, pin)
+        if net is None:
+            s.no_connect(p)
+        else:
+            s.stub(net, p, 7.62, 'right')
+
+    # I2C pull-ups. 4k7 is the usual choice at 400 kHz on a short bus.
+    for i, (ref, net) in enumerate((('R9', 'TP_SDA'), ('R10', 'TP_SCL'))):
+        rat = (609.6 + i * 20.32, 469.9)
+        s.symbol(R, ref, rat, value='4k7', footprint=FP_R)
+        s.vstub('VCC', s.pin(R, rat, 1), 7.62, 'up')
+        s.vstub(net, s.pin(R, rat, 2), 7.62, 'down')
 
 
 # ---------------------------------------------------------------- backlight
@@ -141,9 +245,9 @@ def led_array(s):
     s.text('BACKLIGHT  --  60x SK6812MINI-E, reverse mount in the Choc v1 centre window, '
            'one chain, GRB', (30.48, 185.42))
 
-    for r in range(ROWS):
-        for c in range(COLS):
-            k = r * COLS + c + 1
+    for r in range(PHYS_ROWS):
+        for c in range(PHYS_COLS):
+            k = r * PHYS_COLS + c + 1
             at = (x0b + c * px, y0b + r * py)
             s.symbol(LED, f'LED{k}', at, value='SK6812MINI-E',
                      ref_offset=(0, -17.78), val_offset=(0, 17.78), hide_value=True)
@@ -162,8 +266,8 @@ def led_array(s):
                 prev = (x0b + (c - 1) * px, y0b + r * py)
                 s.wire(s.pin(LED, prev, 2), din)
 
-            if c == COLS - 1:
-                if r == ROWS - 1:
+            if c == PHYS_COLS - 1:
+                if r == PHYS_ROWS - 1:
                     s.wire(dout, (dout[0] + 5.08, dout[1]))
                     s.no_connect((dout[0] + 5.08, dout[1]))
                 else:
@@ -177,8 +281,8 @@ def led_decoupling(s):
     s.text('LED DECOUPLING  --  one 0.1uF per LED, place each one at its LED on the PCB',
            (302.26, 185.42))
 
-    for i in range(ROWS * COLS):
-        r, c = divmod(i, COLS)
+    for i in range(PHYS_ROWS * PHYS_COLS):
+        r, c = divmod(i, PHYS_COLS)
         at = (x0b + c * px, y0b + r * py)
         s.symbol(C, f'C{101 + i}', at, value='100n', footprint=FP_C,
                  ref_offset=(-6.35, -2.54), val_offset=(-6.35, 2.54), hide_value=(c > 0))
@@ -192,7 +296,9 @@ def mcu(s):
     s.text('CONTROLLER  --  nice!nano v2, reverse mounted under the key field, '
            'USB at the back edge', (520.7, 30.48))
     s.symbol(NANO, 'U1', at, value='nice!nano v2',
-             footprint='nice-nano-kicad:nice_nano',
+             # Socketed on headers, not soldered flat: pins 1-12 through-hole,
+             # the rest surface-mount. See tools/gen_nano_footprint.py.
+             footprint='order66lp:nice_nano_Hdr_TH1-12_SMD13-33',
              ref_offset=(0, -41.91), val_offset=(0, 41.91))
 
     for num, net in NANO_NETS.items():
@@ -219,22 +325,22 @@ def battery_and_switches(s):
     s.stub('GND', s.pin(CONN2, j1, 2), 7.62, 'right')
 
     # Two power-switch footprint options, both BATT+ -> VBATT+. Populate exactly one.
-    sw62 = (541.02, 205.74)
-    s.symbol('EG1206A:EG1206A', 'SW62', sw62, value='EG1206A',
+    sw64 = (541.02, 205.74)
+    s.symbol('EG1206A:EG1206A', 'SW64', sw64, value='EG1206A',
              footprint='EG1206A:EG1206A_EWI', ref_offset=(0, -6.35), val_offset=(0, 6.35))
-    s.no_connect(s.pin('EG1206A:EG1206A', sw62, 1))
-    s.stub('BATT+', s.pin('EG1206A:EG1206A', sw62, 2), 7.62, 'right')
-    s.stub('VBATT+', s.pin('EG1206A:EG1206A', sw62, 3), 7.62, 'right')
+    s.no_connect(s.pin('EG1206A:EG1206A', sw64, 1))
+    s.stub('BATT+', s.pin('EG1206A:EG1206A', sw64, 2), 7.62, 'right')
+    s.stub('VBATT+', s.pin('EG1206A:EG1206A', sw64, 3), 7.62, 'right')
 
-    sw63 = (541.02, 228.6)
-    s.symbol('SSSS811101:SSSS811101', 'SW63', sw63, value='SSSS811101',
+    sw65 = (541.02, 228.6)
+    s.symbol('SSSS811101:SSSS811101', 'SW65', sw65, value='SSSS811101',
              footprint='SSSS811101:SW_SSSS811101', ref_offset=(0, -8.89), val_offset=(0, 8.89))
-    s.stub('BATT+', s.pin('SSSS811101:SSSS811101', sw63, 1), 7.62, 'right')
-    s.stub('VBATT+', s.pin('SSSS811101:SSSS811101', sw63, 2), 7.62, 'right')
-    s.no_connect(s.pin('SSSS811101:SSSS811101', sw63, 3))
+    s.stub('BATT+', s.pin('SSSS811101:SSSS811101', sw65, 1), 7.62, 'right')
+    s.stub('VBATT+', s.pin('SSSS811101:SSSS811101', sw65, 2), 7.62, 'right')
+    s.no_connect(s.pin('SSSS811101:SSSS811101', sw65, 3))
 
     rst = (701.04, 182.88)
-    s.symbol('Switch:SW_Push', 'SW61', rst, value='RESET', footprint=FP_RST)
+    s.symbol('Switch:SW_Push', 'SW63', rst, value='RESET', footprint=FP_RST)
     s.stub('RST', s.pin('Switch:SW_Push', rst, 1), 7.62, 'left')
     s.stub('GND', s.pin('Switch:SW_Push', rst, 2), 7.62, 'right')
 
@@ -289,7 +395,7 @@ def led_power(s):
           5: 'BST_SW', 6: 'VBATT_LED', 7: 'VBATT_LED', 8: 'BST_SS'},
          ref_offset=(0, -14.0), val_offset=(0, 14.0))
     part(L, 'L1', (723.9, 309.88), '4.7uH', FP_L, {1: 'VBATT_LED', 2: 'BST_SW'})
-    part('Diode:MBRA340', 'D61', (723.9, 342.9), 'MBRA340', 'Diode_SMD:D_SMA',
+    part('Diode:MBRA340', 'D63', (723.9, 342.9), 'MBRA340', 'Diode_SMD:D_SMA',
          {1: 'VLED', 2: 'BST_SW'})
     part(C, 'C1', (744.22, 309.88), '10u', FP_C_BIG, {1: 'VBATT_LED', 2: 'GND'})
     part(C, 'C2', (764.54, 309.88), '100n', FP_C, {1: 'VBATT_LED', 2: 'GND'})

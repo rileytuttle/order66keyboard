@@ -7,6 +7,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: nxtkb
+      url-base: https://github.com/nxtkb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -35,5 +37,14 @@ manifest:
           - openthread
           - edtt
           - trusted-firmware-m
+    # Cirque Pinnacle input driver. ZMK core carries the pointing plumbing
+    # (zmk,input-listener and the input processors) but no sensor drivers, so this
+    # has to come from a module.
+    - name: cirque-input-module
+      remote: nxtkb
+      revision: 8af03a4c061580c14ec8745caf0fa2dd3fc7f042  # main
+      # Pinned, not 'main': zephyrDepsHash in flake.nix is a fixed-output hash of this
+      # whole workspace, so a floating revision would silently break the build the
+      # next time upstream moves. `nix run .#update` rebumps both together.
   self:
     path: config
