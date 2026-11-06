@@ -8,6 +8,8 @@ cd "$(dirname "$0")/.."
 
 if [ ! -d .west ]; then
     west init -l config
+fi
+if [ ! -d zmk/app ]; then
     west update
 fi
 
