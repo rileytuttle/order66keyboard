@@ -1,0 +1,13 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      # main @ 2026-10-09 ("trivial: Use USB IF instead of BT SIG namespace (#3505)")
+      # bump this manually (then `west update`) to pick up a newer zmk.
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
+      import: app/west.yml
+  self:
+    path: config

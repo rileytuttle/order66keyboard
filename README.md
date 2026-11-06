@@ -30,11 +30,13 @@ CASE
 
 SOFTWARE
 * check out the tag corresponding to the pcb version we have
-* follow instructions [here](https://zmk.dev/docs/development/local-toolchain/setup/container) to set up zmk devcontainer
-* then once in zmk container app folder do this
+* build via Docker (needs only Docker/Docker Compose installed, nothing else):
 ```
-west build -p -b nice_nano_v2 -- -DSHIELD="order66 nice_view_adapter nice_view" -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/order66-shield"
+docker compose run --rm zmk scripts/build.sh
 ```
+  This uses ZMK's own prebuilt dev image, so the toolchain always matches what's pinned in `config/west.yml`. First run takes a while (clones zmk + Zephyr); later runs are fast.
+* or build natively, if you'd rather not use Docker: follow [ZMK's local toolchain setup](https://zmk.dev/docs/development/local-toolchain/setup) to install `west` + the Zephyr SDK, then from the repo root run `./scripts/build.sh`.
+* either way, the firmware ends up at `build/zephyr/zmk.uf2` — double-tap reset on the nice!nano to mount it as a USB drive, then copy that file over.
 
 NOTE:
-once I fix how I created the zmk shield I should be able to move to the "normal" zmk firmware build method. but for now we have to use the local build environment.
+`zmk/` is now a plain, unforked checkout of upstream ZMK managed by `west` (see `config/west.yml`) instead of a custom fork — it's gitignored and recreated by `west update`. The `order66-shield` directory stays a regular git submodule for now.

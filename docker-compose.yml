@@ -1,0 +1,8 @@
+services:
+  zmk:
+    image: docker.io/zmkfirmware/zmk-dev-arm:4.1-branch
+    working_dir: /workspaces/order66keyboard
+    volumes:
+      - .:/workspaces/order66keyboard
+    tty: true
+    stdin_open: true

@@ -4,9 +4,6 @@
 [submodule "order66-case"]
 	path = order66-case
 	url = git@github.com:rileytuttle/order66-case.git
-[submodule "zmk"]
-	path = zmk
-	url = git@github.com:rileytuttle/zmk.git
 [submodule "order66-shield"]
 	path = zmk-modules/order66-shield
 	url = git@github.com:rileytuttle/order66-shield.git

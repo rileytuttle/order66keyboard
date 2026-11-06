@@ -1,0 +1,9 @@
+# west workspace (populated by `west update`, not committed)
+/.west/
+/zmk/
+/modules/
+/tools/
+/zephyr/
+/bootloader/
+/build/
+/optional/
